@@ -1,3 +1,4 @@
+
 """
 Необходимо создать 3 класса и взаимосвязь между ними (Student, Teacher,
 Homework)
@@ -38,6 +39,43 @@ PEP8 соблюдать строго, проверку делаю автотес
 давать логичные подходящие имена.
 """
 import datetime
+
+
+class Homework:
+    def __init__(self, text, days):
+        self.text = text
+        self.deadline = datetime.timedelta(days)
+        self.created = datetime.datetime.now()
+
+    def is_active(self):
+        if (datetime.datetime.now() - self.created) < self.deadline:
+            return True
+        else:
+            return False
+
+
+class Student:
+    def __init__(self, last_name, first_name):
+        self.last_name = last_name
+        self.first_name = first_name
+
+    @staticmethod
+    def do_homework(homework):
+        if homework.is_active():
+            return homework
+        else:
+            print('You are late')
+            return None
+
+
+class Teacher:
+    def __init__(self, last_name, first_name):
+        self.last_name = last_name
+        self.first_name = first_name
+
+    @staticmethod
+    def create_homework(text, days):
+        return Homework(text, days)
 
 
 if __name__ == '__main__':
