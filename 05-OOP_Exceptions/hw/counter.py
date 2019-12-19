@@ -11,12 +11,18 @@ reset_instances_counter - сбросить счетчик экземпляров
 
 
 def instances_counter(cls):
+    cls.number_of_copies = 0
 
-    def get_created_instances(*args, **kwargs):
+    def __new__(cls):
+        cls.number_of_copies += 1
+        object = super(cls, cls).__new__(cls)
+        return object
+
+    def get_created_instances(*args):
         print(cls.number_of_copies)
         return cls.number_of_copies
 
-    def reset_instances_counter(*args, **kwargs):
+    def reset_instances_counter(*args):
         count = cls.number_of_copies
         cls.number_of_copies = 0
         print(count)
@@ -24,15 +30,13 @@ def instances_counter(cls):
 
     cls.get_created_instances = get_created_instances
     cls.reset_instances_counter = reset_instances_counter
+    cls.__new__ = __new__
     return cls
 
 
 @instances_counter
 class User:
-    number_of_copies = 0
-
-    def __init__(self, *args, **kwargs):
-        User.number_of_copies += 1
+    pass
 
 
 if __name__ == '__main__':
