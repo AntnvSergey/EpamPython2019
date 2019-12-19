@@ -38,28 +38,3 @@ for thread in THREADS:
     thread.join()
 
 c.close()
-
-# def listen(t):
-#     while True:
-#         if not IS_RUNNING:
-#             return
-#         print('listening', t)
-#         sleep(2)
-#
-#
-# IS_RUNNING = True
-#
-# listen_thread = Thread(target=listen, args=(123,))
-#
-# listen_thread.start()
-#
-# THREADS = []
-#
-# THREADS.append(listen_thread)
-#
-# input('PRESS ANY KEY TO STOP')
-#
-# IS_RUNNING = False
-#
-# for thread in THREADS:
-#     thread.join()
