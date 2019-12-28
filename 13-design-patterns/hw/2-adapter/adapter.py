@@ -1,24 +1,3 @@
-"""
-Класс StoreService - очень упрощенный арихв XML-документов, который умеет сохранять документ и возвращать его.
-    (и в котором могло бы быть реализовано больше функций, например, поиск документов по тексту, проверка на попытку
-    загрузить один и тот же файл дважды и т.д.)
-Сервис предоставляет определенный интерфейс, который мы знаем, но не можем изменить.
-Класс StoreService нельзя изменять.
-
-Класс DocumentsHandler - выполняющая роль выгрузки и загрузки документов часть нашего гипотетически огромного
-    приложения App. Другими словами, это клиент, который содержит существующую бизнес-логику программы.
-Класс DocumentsHandler нельзя изменять.
-
-Далее идет клиентский код, в котором реализована логика загрузки документов в сервис-архив и выгрузка этих же
-    документов из сервиса. Клиентский код изменять нельзя.
-
-Ранее сервис работал с документами в формате XML, но недавно он изменился и стал работать с JSON-документами,
-    что вызвало ряд неполадок в нашем приложении. Необходимо написать класс-адаптер, который перед отработкой
-    текущей бизнес-логики (загрузка документов) сконвертирует XML-документы в JSON-документы.
-
-Примечание: Действительно конвертировать XML в JSON не нужно. Будет достаточно изменить расширение документа.
-"""
-
 import uuid
 import os
 
@@ -48,7 +27,7 @@ class StoreService:
             }
         return {
             'status': 'error',
-            'msg': f'Document with {document_id} ID is not found.',
+            'msg': 'Document with {} ID is not found.'.format(document_id),
         }
 
 
@@ -100,6 +79,20 @@ class DocumentsHandler:
         return loaded_documents
 
 
+class Adapter:
+
+    def __init__(self, service):
+        self._service = service
+
+    def upload_documents(self, documents):
+        for i, document in enumerate(documents):
+            documents[i] = document.replace('xml', 'json')
+        return self._service.upload_documents(documents)
+
+    def get_documents(self, document_ids):
+        return self._service.get_documents(document_ids)
+
+
 def client_code(documents_handler):
     xml_files_to_upload = os.listdir(os.path.dirname(__file__) + '/documents')
 
@@ -109,11 +102,11 @@ def client_code(documents_handler):
 
 
 if __name__ == "__main__":
-    class App:
-        pass  # Упрощенная реализация сложного приложения
+    class App: pass  # Упрощенная реализация сложного приложения
+
 
     app = App()
     app.documents_handler = DocumentsHandler(StoreService())
     # Реализуйте класс Adapter и раскомментируйте строку ниже
-    # app.documents_handler = Adapter(app.documents_handler)
+    app.documents_handler = Adapter(app.documents_handler)
     client_code(app.documents_handler)

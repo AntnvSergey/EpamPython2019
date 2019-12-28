@@ -57,13 +57,8 @@ class DeadlineError(Exception):
     pass
 
 
-class Human:
-    def __init__(self, last_name, first_name):
-        self.last_name = last_name
-        self.first_name = first_name
-
-
 class HomeworkResult:
+
     def __init__(self, student, homework, solution):
         if not isinstance(homework, Homework):
             raise TypeError('You gave a not Homework object')
@@ -73,48 +68,55 @@ class HomeworkResult:
         self.created = datetime.datetime.now()
 
 
+class Human:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+
 class Homework:
-    def __init__(self, text, days):
+
+    def __init__(self, text, deadline):
         self.text = text
-        self.deadline = datetime.timedelta(days)
+        self.deadline = datetime.timedelta(days=deadline)
         self.created = datetime.datetime.now()
 
     def is_active(self):
-        if (datetime.datetime.now() - self.created) < self.deadline:
-            return True
-        else:
-            return False
+        return datetime.datetime.now() - self.created < self.deadline
 
 
 class Student(Human):
+
     def do_homework(self, homework, solution):
         if homework.is_active():
             return HomeworkResult(self, homework, solution)
-        else:
-            raise DeadlineError('You are late')
-
+        raise DeadlineError('You are late')
+        
+        
 
 class Teacher(Human):
-    homework_done = defaultdict(list)
+
+    homework_done = defaultdict(set)
 
     @staticmethod
-    def create_homework(text, days):
-        return Homework(text, days)
+    def create_homework(text, deadline):
+        return Homework(text, deadline)
 
-    def check_homework(self, homework_result):
+    @classmethod
+    def check_homework(cls, homework_result):
         if len(homework_result.solution) >= 5:
-            if homework_result not in self.homework_done[homework_result.homework]:
-                self.homework_done[homework_result.homework].append(homework_result)
+            cls.homework_done[homework_result.homework].add(
+                homework_result.solution)
             return True
-        else:
-            return False
+        return False
 
     @classmethod
     def reset_results(cls, homework=None):
         if homework:
-            cls.homework_done[homework] = []
+            if homework in cls.homework_done:
+                cls.homework_done.pop(homework)
         else:
-            cls.homework_done = defaultdict(list)
+            cls.homework_done.clear()
 
 
 if __name__ == '__main__':
