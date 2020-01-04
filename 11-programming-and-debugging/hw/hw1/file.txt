@@ -1,0 +1,463 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       127.0.0.1             127.0.0.1             TCP      62     51652 → 5091 [PSH, ACK] Seq=1 Ack=1 Win=6379 Len=6 TSval=177531167 TSecr=177422284
+
+Frame 1: 62 bytes on wire (496 bits), 62 bytes captured (496 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 1, Ack: 1, Len: 6
+Data (6 bytes)
+
+0000  73 65 72 67 65 79                                 sergey
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000030       127.0.0.1             127.0.0.1             TCP      56     5091 → 51652 [ACK] Seq=1 Ack=7 Win=6379 Len=0 TSval=177531167 TSecr=177531167
+
+Frame 2: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 1, Ack: 7, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000128       127.0.0.1             127.0.0.1             TCP      189    5091 → 51652 [PSH, ACK] Seq=1 Ack=7 Win=6379 Len=133 TSval=177531167 TSecr=177531167
+
+Frame 3: 189 bytes on wire (1512 bits), 189 bytes captured (1512 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 1, Ack: 7, Len: 133
+Data (133 bytes)
+
+0000  57 65 6c 63 6f 6d 65 20 73 65 72 67 65 79 21 20   Welcome sergey! 
+0010  31 2e 20 53 65 65 20 74 68 65 20 6c 69 73 74 20   1. See the list 
+0020  6f 66 20 75 73 65 72 73 3a 20 74 79 70 65 20 22   of users: type "
+0030  6c 69 73 74 20 6f 66 20 75 73 65 72 73 22 2e 20   list of users". 
+0040  32 2e 20 57 72 69 74 65 20 73 70 65 63 69 66 69   2. Write specifi
+0050  63 20 75 73 65 72 73 3a 20 74 79 70 65 20 22 77   c users: type "w
+0060  72 69 74 65 20 74 6f 20 75 73 65 72 22 2e 20 33   rite to user". 3
+0070  2e 20 51 75 69 74 3a 20 74 79 70 65 20 22 71 75   . Quit: type "qu
+0080  69 74 22 2e 0a                                    it"..
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000154       127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=7 Ack=134 Win=6377 Len=0 TSval=177531167 TSecr=177531167
+
+Frame 4: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 7, Ack: 134, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 4.753226       127.0.0.1             127.0.0.1             TCP      62     51653 → 5091 [PSH, ACK] Seq=1 Ack=1 Win=6379 Len=6 TSval=177535898 TSecr=177426024
+
+Frame 5: 62 bytes on wire (496 bits), 62 bytes captured (496 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 1, Ack: 1, Len: 6
+Data (6 bytes)
+
+0000  61 6e 64 72 65 79                                 andrey
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 4.753251       127.0.0.1             127.0.0.1             TCP      56     5091 → 51653 [ACK] Seq=1 Ack=7 Win=6379 Len=0 TSval=177535898 TSecr=177535898
+
+Frame 6: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 1, Ack: 7, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 4.753310       127.0.0.1             127.0.0.1             TCP      189    5091 → 51653 [PSH, ACK] Seq=1 Ack=7 Win=6379 Len=133 TSval=177535898 TSecr=177535898
+
+Frame 7: 189 bytes on wire (1512 bits), 189 bytes captured (1512 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 1, Ack: 7, Len: 133
+Data (133 bytes)
+
+0000  57 65 6c 63 6f 6d 65 20 61 6e 64 72 65 79 21 20   Welcome andrey! 
+0010  31 2e 20 53 65 65 20 74 68 65 20 6c 69 73 74 20   1. See the list 
+0020  6f 66 20 75 73 65 72 73 3a 20 74 79 70 65 20 22   of users: type "
+0030  6c 69 73 74 20 6f 66 20 75 73 65 72 73 22 2e 20   list of users". 
+0040  32 2e 20 57 72 69 74 65 20 73 70 65 63 69 66 69   2. Write specifi
+0050  63 20 75 73 65 72 73 3a 20 74 79 70 65 20 22 77   c users: type "w
+0060  72 69 74 65 20 74 6f 20 75 73 65 72 22 2e 20 33   rite to user". 3
+0070  2e 20 51 75 69 74 3a 20 74 79 70 65 20 22 71 75   . Quit: type "qu
+0080  69 74 22 2e 0a                                    it"..
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 4.753325       127.0.0.1             127.0.0.1             TCP      83     5091 → 51652 [PSH, ACK] Seq=134 Ack=7 Win=6379 Len=27 TSval=177535898 TSecr=177531167
+
+Frame 8: 83 bytes on wire (664 bits), 83 bytes captured (664 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 134, Ack: 7, Len: 27
+Data (27 bytes)
+
+0000  61 6e 64 72 65 79 20 68 61 73 20 6a 6f 69 6e 65   andrey has joine
+0010  64 20 74 68 65 20 63 68 61 74 21                  d the chat!
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 4.753342       127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=7 Ack=134 Win=6377 Len=0 TSval=177535898 TSecr=177535898
+
+Frame 9: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 7, Ack: 134, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 4.753346       127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=7 Ack=161 Win=6376 Len=0 TSval=177535898 TSecr=177535898
+
+Frame 10: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 7, Ack: 161, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 10.370174      127.0.0.1             127.0.0.1             TCP      61     51652 → 5091 [PSH, ACK] Seq=7 Ack=161 Win=6376 Len=5 TSval=177541505 TSecr=177535898
+
+Frame 11: 61 bytes on wire (488 bits), 61 bytes captured (488 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 7, Ack: 161, Len: 5
+Data (5 bytes)
+
+0000  68 65 6c 6c 6f                                    hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 10.370203      127.0.0.1             127.0.0.1             TCP      56     5091 → 51652 [ACK] Seq=161 Ack=12 Win=6379 Len=0 TSval=177541505 TSecr=177541505
+
+Frame 12: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 161, Ack: 12, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 10.370269      127.0.0.1             127.0.0.1             TCP      69     5091 → 51652 [PSH, ACK] Seq=161 Ack=12 Win=6379 Len=13 TSval=177541505 TSecr=177541505
+
+Frame 13: 69 bytes on wire (552 bits), 69 bytes captured (552 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 161, Ack: 12, Len: 13
+Data (13 bytes)
+
+0000  73 65 72 67 65 79 3a 20 68 65 6c 6c 6f            sergey: hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 10.370279      127.0.0.1             127.0.0.1             TCP      69     5091 → 51653 [PSH, ACK] Seq=134 Ack=7 Win=6379 Len=13 TSval=177541505 TSecr=177535898
+
+Frame 14: 69 bytes on wire (552 bits), 69 bytes captured (552 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 134, Ack: 7, Len: 13
+Data (13 bytes)
+
+0000  73 65 72 67 65 79 3a 20 68 65 6c 6c 6f            sergey: hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 10.370300      127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=12 Ack=174 Win=6376 Len=0 TSval=177541505 TSecr=177541505
+
+Frame 15: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 12, Ack: 174, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 10.370306      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=7 Ack=147 Win=6376 Len=0 TSval=177541505 TSecr=177541505
+
+Frame 16: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 7, Ack: 147, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 14.090334      127.0.0.1             127.0.0.1             TCP      61     51653 → 5091 [PSH, ACK] Seq=7 Ack=147 Win=6376 Len=5 TSval=177545216 TSecr=177541505
+
+Frame 17: 61 bytes on wire (488 bits), 61 bytes captured (488 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 7, Ack: 147, Len: 5
+Data (5 bytes)
+
+0000  68 65 6c 6c 6f                                    hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 14.090365      127.0.0.1             127.0.0.1             TCP      56     5091 → 51653 [ACK] Seq=147 Ack=12 Win=6379 Len=0 TSval=177545216 TSecr=177545216
+
+Frame 18: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 147, Ack: 12, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 14.090419      127.0.0.1             127.0.0.1             TCP      69     5091 → 51652 [PSH, ACK] Seq=174 Ack=12 Win=6379 Len=13 TSval=177545216 TSecr=177541505
+
+Frame 19: 69 bytes on wire (552 bits), 69 bytes captured (552 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 174, Ack: 12, Len: 13
+Data (13 bytes)
+
+0000  61 6e 64 72 65 79 3a 20 68 65 6c 6c 6f            andrey: hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 14.090431      127.0.0.1             127.0.0.1             TCP      69     5091 → 51653 [PSH, ACK] Seq=147 Ack=12 Win=6379 Len=13 TSval=177545216 TSecr=177545216
+
+Frame 20: 69 bytes on wire (552 bits), 69 bytes captured (552 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 147, Ack: 12, Len: 13
+Data (13 bytes)
+
+0000  61 6e 64 72 65 79 3a 20 68 65 6c 6c 6f            andrey: hello
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 14.090432      127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=12 Ack=187 Win=6376 Len=0 TSval=177545216 TSecr=177545216
+
+Frame 21: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 12, Ack: 187, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 14.090442      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=12 Ack=160 Win=6376 Len=0 TSval=177545216 TSecr=177545216
+
+Frame 22: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 12, Ack: 160, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 20.880440      127.0.0.1             127.0.0.1             TCP      69     51652 → 5091 [PSH, ACK] Seq=12 Ack=187 Win=6376 Len=13 TSval=177551995 TSecr=177545216
+
+Frame 23: 69 bytes on wire (552 bits), 69 bytes captured (552 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 12, Ack: 187, Len: 13
+Data (13 bytes)
+
+0000  68 6f 77 20 61 72 65 20 79 6f 75 20 3f            how are you ?
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 20.880470      127.0.0.1             127.0.0.1             TCP      56     5091 → 51652 [ACK] Seq=187 Ack=25 Win=6379 Len=0 TSval=177551995 TSecr=177551995
+
+Frame 24: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 187, Ack: 25, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 20.880527      127.0.0.1             127.0.0.1             TCP      77     5091 → 51652 [PSH, ACK] Seq=187 Ack=25 Win=6379 Len=21 TSval=177551995 TSecr=177551995
+
+Frame 25: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 187, Ack: 25, Len: 21
+Data (21 bytes)
+
+0000  73 65 72 67 65 79 3a 20 68 6f 77 20 61 72 65 20   sergey: how are 
+0010  79 6f 75 20 3f                                    you ?
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 20.880544      127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=25 Ack=208 Win=6375 Len=0 TSval=177551995 TSecr=177551995
+
+Frame 26: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 25, Ack: 208, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 20.880565      127.0.0.1             127.0.0.1             TCP      77     5091 → 51653 [PSH, ACK] Seq=160 Ack=12 Win=6379 Len=21 TSval=177551995 TSecr=177545216
+
+Frame 27: 77 bytes on wire (616 bits), 77 bytes captured (616 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 160, Ack: 12, Len: 21
+Data (21 bytes)
+
+0000  73 65 72 67 65 79 3a 20 68 6f 77 20 61 72 65 20   sergey: how are 
+0010  79 6f 75 20 3f                                    you ?
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 20.880578      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=12 Ack=181 Win=6376 Len=0 TSval=177551995 TSecr=177551995
+
+Frame 28: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 12, Ack: 181, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 27.689960      127.0.0.1             127.0.0.1             TCP      60     51653 → 5091 [PSH, ACK] Seq=12 Ack=181 Win=6376 Len=4 TSval=177558785 TSecr=177551995
+
+Frame 29: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 12, Ack: 181, Len: 4
+Data (4 bytes)
+
+0000  66 69 6e 65                                       fine
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 27.689989      127.0.0.1             127.0.0.1             TCP      56     5091 → 51653 [ACK] Seq=181 Ack=16 Win=6379 Len=0 TSval=177558785 TSecr=177558785
+
+Frame 30: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 181, Ack: 16, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 27.690051      127.0.0.1             127.0.0.1             TCP      68     5091 → 51652 [PSH, ACK] Seq=208 Ack=25 Win=6379 Len=12 TSval=177558785 TSecr=177551995
+
+Frame 31: 68 bytes on wire (544 bits), 68 bytes captured (544 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 208, Ack: 25, Len: 12
+Data (12 bytes)
+
+0000  61 6e 64 72 65 79 3a 20 66 69 6e 65               andrey: fine
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 27.690067      127.0.0.1             127.0.0.1             TCP      68     5091 → 51653 [PSH, ACK] Seq=181 Ack=16 Win=6379 Len=12 TSval=177558785 TSecr=177558785
+
+Frame 32: 68 bytes on wire (544 bits), 68 bytes captured (544 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 181, Ack: 16, Len: 12
+Data (12 bytes)
+
+0000  61 6e 64 72 65 79 3a 20 66 69 6e 65               andrey: fine
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 27.690068      127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=25 Ack=220 Win=6375 Len=0 TSval=177558785 TSecr=177558785
+
+Frame 33: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 25, Ack: 220, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 27.690078      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=16 Ack=193 Win=6376 Len=0 TSval=177558785 TSecr=177558785
+
+Frame 34: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 16, Ack: 193, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 35.335654      127.0.0.1             127.0.0.1             TCP      60     51652 → 5091 [PSH, ACK] Seq=25 Ack=220 Win=6375 Len=4 TSval=177566412 TSecr=177558785
+
+Frame 35: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 25, Ack: 220, Len: 4
+Data (4 bytes)
+
+0000  71 75 69 74                                       quit
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 35.335683      127.0.0.1             127.0.0.1             TCP      56     5091 → 51652 [ACK] Seq=220 Ack=29 Win=6379 Len=0 TSval=177566412 TSecr=177566412
+
+Frame 36: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 220, Ack: 29, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 35.335745      127.0.0.1             127.0.0.1             TCP      56     5091 → 51652 [FIN, ACK] Seq=220 Ack=29 Win=6379 Len=0 TSval=177566412 TSecr=177566412
+
+Frame 37: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 220, Ack: 29, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 35.335763      127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [ACK] Seq=29 Ack=221 Win=6375 Len=0 TSval=177566412 TSecr=177566412
+
+Frame 38: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 29, Ack: 221, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 35.335821      127.0.0.1             127.0.0.1             TCP      81     5091 → 51653 [PSH, ACK] Seq=193 Ack=16 Win=6379 Len=25 TSval=177566412 TSecr=177558785
+
+Frame 39: 81 bytes on wire (648 bits), 81 bytes captured (648 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 193, Ack: 16, Len: 25
+Data (25 bytes)
+
+0000  73 65 72 67 65 79 20 68 61 73 20 6c 65 66 74 20   sergey has left 
+0010  74 68 65 20 63 68 61 74 2e                        the chat.
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 35.335841      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=16 Ack=218 Win=6375 Len=0 TSval=177566412 TSecr=177566412
+
+Frame 40: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 16, Ack: 218, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 35.335913      127.0.0.1             127.0.0.1             TCP      56     51652 → 5091 [FIN, ACK] Seq=29 Ack=221 Win=6375 Len=0 TSval=177566412 TSecr=177566412
+
+Frame 41: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51652, Dst Port: 5091, Seq: 29, Ack: 221, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 35.335952      127.0.0.1             127.0.0.1             TCP      56     5091 → 51652 [ACK] Seq=221 Ack=30 Win=6379 Len=0 TSval=177566412 TSecr=177566412
+
+Frame 42: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51652, Seq: 221, Ack: 30, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 38.614193      127.0.0.1             127.0.0.1             TCP      60     51653 → 5091 [PSH, ACK] Seq=16 Ack=218 Win=6375 Len=4 TSval=177569685 TSecr=177566412
+
+Frame 43: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 16, Ack: 218, Len: 4
+Data (4 bytes)
+
+0000  71 75 69 74                                       quit
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 38.614218      127.0.0.1             127.0.0.1             TCP      56     5091 → 51653 [ACK] Seq=218 Ack=20 Win=6379 Len=0 TSval=177569685 TSecr=177569685
+
+Frame 44: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 218, Ack: 20, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 38.614274      127.0.0.1             127.0.0.1             TCP      56     5091 → 51653 [FIN, ACK] Seq=218 Ack=20 Win=6379 Len=0 TSval=177569685 TSecr=177569685
+
+Frame 45: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 218, Ack: 20, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 38.614290      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [ACK] Seq=20 Ack=219 Win=6375 Len=0 TSval=177569685 TSecr=177569685
+
+Frame 46: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 20, Ack: 219, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 38.614435      127.0.0.1             127.0.0.1             TCP      56     51653 → 5091 [FIN, ACK] Seq=20 Ack=219 Win=6375 Len=0 TSval=177569685 TSecr=177569685
+
+Frame 47: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 51653, Dst Port: 5091, Seq: 20, Ack: 219, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 38.614461      127.0.0.1             127.0.0.1             TCP      56     5091 → 51653 [ACK] Seq=219 Ack=21 Win=6379 Len=0 TSval=177569685 TSecr=177569685
+
+Frame 48: 56 bytes on wire (448 bits), 56 bytes captured (448 bits)
+Null/Loopback
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 5091, Dst Port: 51653, Seq: 219, Ack: 21, Len: 0
