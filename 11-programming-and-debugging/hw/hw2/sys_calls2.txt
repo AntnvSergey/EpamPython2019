@@ -1,0 +1,995 @@
+PID/THRD         RELATIVE  ELAPSD    CPU SYSCALL(args) 		 = return
+files were found:
+/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/file1.txt
+
+20699/0xb0165:      2381      96     51 open("/dev/dtracehelper\0", 0x2, 0xFFFFFFFFE46A8E80)		 = 3 0
+20699/0xb0165:      3295    1879    911 ioctl(0x3, 0x80086804, 0x7FFEE46A8D90)		 = 0 0
+20699/0xb0165:      3305      48      7 close(0x3)		 = 0 0
+20699/0xb0165:      3502      46      3 mprotect(0x10B6E5000, 0x3000, 0x1)		 = 0 0
+20699/0xb0165:      3505       4      1 mprotect(0x10B558000, 0x1000, 0x1)		 = 0 0
+20699/0xb0165:      3563      10      7 access("/AppleInternal/XBS/.isChrooted\0", 0x0, 0x0)		 = -1 2
+20699/0xb0165:      3598      12      7 bsdthread_register(0x7FFF7006682C, 0x7FFF70066818, 0x2000)		 = 1073742047 0
+20699/0xb0165:      3637      14      7 sysctlbyname(kern.bootargs, 0xD, 0x7FFEE46A7CC0, 0x7FFEE46A7CB0, 0x0)		 = 0 0
+20699/0xb0165:      3679       4      0 issetugid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb0165:      3691       5      2 ioctl(0x2, 0x4004667A, 0x7FFEE46A8004)		 = 0 0
+20699/0xb0165:      3700       4      1 mprotect(0x10B7C3000, 0x1000, 0x0)		 = 0 0
+20699/0xb0165:      3701       3      0 mprotect(0x10B7C8000, 0x1000, 0x0)		 = 0 0
+20699/0xb0165:      3709       3      0 mprotect(0x10B7C9000, 0x1000, 0x0)		 = 0 0
+20699/0xb0165:      3710       2      0 mprotect(0x10B7CE000, 0x1000, 0x0)		 = 0 0
+20699/0xb0165:      3720       4      1 mprotect(0x10B55E000, 0x90, 0x1)		 = 0 0
+20699/0xb0165:      3726       3      0 mprotect(0x10B560000, 0x1000, 0x1)		 = 0 0
+20699/0xb0165:      3729       5      2 mprotect(0x10B55E000, 0x90, 0x3)		 = 0 0
+20699/0xb0165:      3742       4      1 mprotect(0x10B55E000, 0x90, 0x1)		 = 0 0
+20699/0xb0165:      3829       6      2 getentropy(0x7FFEE46A7420, 0x20, 0x0)		 = 0 0
+20699/0xb0165:      3830       3      0 getentropy(0x7FFEE46A7470, 0x40, 0x0)		 = 0 0
+20699/0xb0165:      3988       3      0 getpid(0x0, 0x0, 0x0)		 = 20699 0
+20699/0xb0165:      3996       7      3 stat64("/AppleInternal\0", 0x7FFEE46A8130, 0x0)		 = -1 2
+20699/0xb0165:      4021       6      1 csops_audittoken(0x50DB, 0x7, 0x7FFEE46A7C80)		 = -1 22
+20699/0xb0165:      4027       8      4 proc_info(0x2, 0x50DB, 0xD)		 = 64 0
+20699/0xb0165:      4046       5      0 csops_audittoken(0x50DB, 0x7, 0x7FFEE46A7500)		 = -1 22
+20699/0xb0165:      4122       3      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb0165:      4123       3      0 getuid(0x0, 0x0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2210 (ID 563: syscall::sysctl:return): invalid kernel access in action #11 at DIF offset 28
+20699/0xb0165:      4167       3      0 gettid(0x7FFEE46A6E10, 0x7FFEE46A6E14, 0x0)		 = -1 3
+20699/0xb0165:      4168       2      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb0165:      4169       3      0 getegid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb0165:      4260       4      1 csops(0x50DB, 0x0, 0x7FFEE46A7B6C)		 = 0 0
+20699/0xb0165:      4262       2      0 gettid(0x7FFEE46A6DE0, 0x7FFEE46A6DE4, 0x0)		 = -1 3
+20699/0xb0165:      4263       2      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb0165:      4263       2      0 getegid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb0165:      4305      26     23 stat64("/System/Library/CoreServices/Encodings/libCyrillicConverter.dylib\0", 0x7FFEE46A6A58, 0x0)		 = 0 0
+20699/0xb0165:      4639      23     15 stat64("/\0", 0x7FFEE46A7C20, 0x0)		 = 0 0
+20699/0xb0165:      4654      23     12 getattrlist("/usr\0", 0x7FFF6FF37944, 0x7FFEE46A9570)		 = 0 0
+20699/0xb0165:      4676      29     20 getattrlist("/usr/local\0", 0x7FFF6FF37944, 0x7FFEE46A9570)		 = 0 0
+20699/0xb0165:      4685      12      8 getattrlist("/usr/local/bin\0", 0x7FFF6FF37944, 0x7FFEE46A9570)		 = 0 0
+    0/0xb0165:      5563    4505    828 posix_spawn(0x0, 0x7FA1D64028D0, 0x7FFEE46A98E0)		 = 0 0
+20699/0xb016c:      6220       8      0 thread_selfid(0x0, 0x0, 0x0)		 = 721260 0
+20699/0xb016c:      6226       6      2 mprotect(0x1120F9000, 0x5000, 0x1)		 = 0 0
+20699/0xb016c:      6246       3      0 csrctl(0x0, 0x7FFEE822DE4C, 0x4)		 = -1 1
+20699/0xb016c:      6259      15     11 fsgetpath(0x7FFEE822DA60, 0x400, 0x7FFEE822DA58)		 = 14 0
+20699/0xb016c:      6263       6      3 fsgetpath(0x7FFEE822DA60, 0x400, 0x7FFEE822DA58)		 = 115 0
+20699/0xb016c:      6274       2      0 csrctl(0x0, 0x7FFEE822DE6C, 0x4)		 = -1 1
+20699/0xb016c:      6281       8      3 __mac_syscall(0x1120F5689, 0x5A, 0x7FFEE822DE60)		 = 0 0
+20699/0xb016c:      6281       2      0 csrctl(0x0, 0x7FFEE822DE6C, 0x4)		 = -1 1
+20699/0xb016c:      6302       6      0 shared_region_check_np(0x7FFEE822DCD8, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      6320      16     12 stat64("/private/var/db/dyld/dyld_shared_cache_x86_64h\0", 0x7FFEE822DC20, 0x0)		 = 0 0
+20699/0xb016c:      6321       2      0 csrctl(0x0, 0x7FFEE822DE2C, 0x4)		 = -1 1
+20699/0xb016c:      6322       2      0 csrctl(0x0, 0x7FFEE822DE2C, 0x4)		 = -1 1
+20699/0xb016c:      6335      14     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python\0", 0x7FFEE822E3A0, 0x0)		 = 0 0
+20699/0xb016c:      6377       3      0 getpid(0x0, 0x0, 0x0)		 = 20699 0
+20699/0xb016c:      6381       7      3 proc_info(0x2, 0x50DB, 0x1F)		 = 1040 0
+20699/0xb016c:      6409      14     12 stat64("/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation\0", 0x7FFEE822D0A8, 0x0)		 = 0 0
+20699/0xb016c:      6428      12      9 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/Python\0", 0x7FFEE822CC60, 0x0)		 = 0 0
+20699/0xb016c:      6439      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/Python\0", 0x7FFEE822D0A8, 0x0)		 = 0 0
+20699/0xb016c:      6471      33     30 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/Python\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:      6491       9      6 fcntl(0x3, 0x62, 0x7FFEE8224830)		 = 0 0
+20699/0xb016c:      6503       8      6 fcntl(0x3, 0x65, 0x7FFEE82249F8)		 = 0 0
+20699/0xb016c:      6581      98     77 mmap(0x1079DA000, 0x183000, 0x5, 0x12, 0x3, 0x0)		 = 0x1079DA000 0
+20699/0xb016c:      6597      17     13 mmap(0x107B5D000, 0x3000, 0x3, 0x12, 0x3, 0x183000)		 = 0x107B5D000 0
+20699/0xb016c:      6614      18     15 mmap(0x107B60000, 0x63000, 0x3, 0x12, 0x3, 0x186000)		 = 0x107B60000 0
+20699/0xb016c:      6630      18     15 mmap(0x107BE3000, 0x57A84, 0x1, 0x12, 0x3, 0x1E9000)		 = 0x107BE3000 0
+20699/0xb016c:      6639       5      2 fcntl(0x3, 0x32, 0x7FFEE8224AD0)		 = 0 0
+20699/0xb016c:      6644       5      2 close(0x3)		 = 0 0
+20699/0xb016c:      6664      15     12 stat64("/usr/lib/libSystem.B.dylib\0", 0x7FFEE822D0A8, 0x0)		 = 0 0
+20699/0xb016c:      6678       8      6 stat64("/usr/lib/libobjc.A.dylib\0", 0x7FFEE822CF68, 0x0)		 = 0 0
+20699/0xb016c:      6690       8      6 stat64("/usr/lib/libfakelink.dylib\0", 0x7FFEE822CF68, 0x0)		 = 0 0
+20699/0xb016c:      6700       8      5 stat64("/usr/lib/libDiagnosticMessagesClient.dylib\0", 0x7FFEE822CF68, 0x0)		 = 0 0
+20699/0xb016c:      6709       7      5 stat64("/usr/lib/libicucore.A.dylib\0", 0x7FFEE822CF68, 0x0)		 = 0 0
+20699/0xb016c:      6719       8      5 stat64("/usr/lib/libz.1.dylib\0", 0x7FFEE822CF68, 0x0)		 = 0 0
+20699/0xb016c:      6729       8      5 stat64("/usr/lib/libc++abi.dylib\0", 0x7FFEE822CE68, 0x0)		 = 0 0
+20699/0xb016c:      6738       8      5 stat64("/usr/lib/libc++.1.dylib\0", 0x7FFEE822CE68, 0x0)		 = 0 0
+20699/0xb016c:      6759      18     16 stat64("/usr/lib/system/libcache.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6775      11      8 stat64("/usr/lib/system/libcommonCrypto.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6792      11      8 stat64("/usr/lib/system/libcompiler_rt.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6806      11      8 stat64("/usr/lib/system/libcopyfile.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6818      10      7 stat64("/usr/lib/system/libcorecrypto.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6831      10      7 stat64("/usr/lib/system/libdispatch.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6844      11      8 stat64("/usr/lib/system/libdyld.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6857      10      7 stat64("/usr/lib/system/libkeymgr.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6870      11      8 stat64("/usr/lib/system/liblaunch.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6883      11      8 stat64("/usr/lib/system/libmacho.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6897      11      8 stat64("/usr/lib/system/libquarantine.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6909      10      7 stat64("/usr/lib/system/libremovefile.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6922      10      7 stat64("/usr/lib/system/libsystem_asl.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6935      10      7 stat64("/usr/lib/system/libsystem_blocks.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6948      11      8 stat64("/usr/lib/system/libsystem_c.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6959       8      6 stat64("/usr/lib/system/libsystem_configuration.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6970       8      5 stat64("/usr/lib/system/libsystem_coreservices.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6979       7      5 stat64("/usr/lib/system/libsystem_darwin.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      6991       7      5 stat64("/usr/lib/system/libsystem_dnssd.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7001       7      5 stat64("/usr/lib/system/libsystem_featureflags.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7010       7      5 stat64("/usr/lib/system/libsystem_info.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7020       7      5 stat64("/usr/lib/system/libsystem_m.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7029       8      5 stat64("/usr/lib/system/libsystem_malloc.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7039       7      5 stat64("/usr/lib/system/libsystem_networkextension.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7049       7      5 stat64("/usr/lib/system/libsystem_notify.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7058       7      5 stat64("/usr/lib/system/libsystem_sandbox.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7068       8      5 stat64("/usr/lib/system/libsystem_secinit.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7078       8      5 stat64("/usr/lib/system/libsystem_kernel.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7088       7      5 stat64("/usr/lib/system/libsystem_platform.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7098       8      6 stat64("/usr/lib/system/libsystem_pthread.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7107       7      5 stat64("/usr/lib/system/libsystem_symptoms.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7117       7      5 stat64("/usr/lib/system/libsystem_trace.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7128       7      5 stat64("/usr/lib/system/libunwind.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7137       8      5 stat64("/usr/lib/system/libxpc.dylib\0", 0x7FFEE822C9B8, 0x0)		 = 0 0
+20699/0xb016c:      7734      68     60 open("/dev/dtracehelper\0", 0x2, 0xFFFFFFFFE822DD80)		 = 3 0
+20699/0xb016c:      8199     466    462 ioctl(0x3, 0x80086804, 0x7FFEE822DC90)		 = 0 0
+20699/0xb016c:      8208      10      6 close(0x3)		 = 0 0
+20699/0xb016c:      8473      14      5 mprotect(0x107B5D000, 0x3000, 0x1)		 = 0 0
+20699/0xb016c:      8476       4      1 mprotect(0x1079D3000, 0x1000, 0x1)		 = 0 0
+20699/0xb016c:      8547      13      9 access("/AppleInternal/XBS/.isChrooted\0", 0x0, 0x0)		 = -1 2
+20699/0xb016c:      8583      12      6 bsdthread_register(0x7FFF7006682C, 0x7FFF70066818, 0x2000)		 = 1073742047 0
+20699/0xb016c:      8625      15      7 sysctlbyname(kern.bootargs, 0xD, 0x7FFEE822CC20, 0x7FFEE822CC10, 0x0)		 = 0 0
+20699/0xb016c:      8676       4      0 issetugid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      8690       5      2 ioctl(0x2, 0x4004667A, 0x7FFEE822CF64)		 = 0 0
+20699/0xb016c:      8701       5      1 mprotect(0x107C3B000, 0x1000, 0x0)		 = 0 0
+20699/0xb016c:      8702       3      0 mprotect(0x107C40000, 0x1000, 0x0)		 = 0 0
+20699/0xb016c:      8711       3      1 mprotect(0x107C41000, 0x1000, 0x0)		 = 0 0
+20699/0xb016c:      8712       3      0 mprotect(0x107C46000, 0x1000, 0x0)		 = 0 0
+20699/0xb016c:      8723       4      1 mprotect(0x1079D8000, 0x90, 0x1)		 = 0 0
+20699/0xb016c:      8729       3      0 mprotect(0x107C47000, 0x1000, 0x1)		 = 0 0
+20699/0xb016c:      8732       5      2 mprotect(0x1079D8000, 0x90, 0x3)		 = 0 0
+20699/0xb016c:      8746       4      1 mprotect(0x1079D8000, 0x90, 0x1)		 = 0 0
+20699/0xb016c:      8842       7      2 getentropy(0x7FFEE822C380, 0x20, 0x0)		 = 0 0
+20699/0xb016c:      8843       3      0 getentropy(0x7FFEE822C3D0, 0x40, 0x0)		 = 0 0
+20699/0xb016c:      9016       4      0 getpid(0x0, 0x0, 0x0)		 = 20699 0
+20699/0xb016c:      9028      10      7 stat64("/AppleInternal\0", 0x7FFEE822D090, 0x0)		 = -1 2
+20699/0xb016c:      9059       6      1 csops_audittoken(0x50DB, 0x7, 0x7FFEE822CBE0)		 = -1 22
+20699/0xb016c:      9065       8      4 proc_info(0x2, 0x50DB, 0xD)		 = 64 0
+20699/0xb016c:      9089       5      1 csops_audittoken(0x50DB, 0x7, 0x7FFEE822C460)		 = -1 22
+20699/0xb016c:      9173       3      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      9174       2      0 getuid(0x0, 0x0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2210 (ID 563: syscall::sysctl:return): invalid kernel access in action #11 at DIF offset 28
+20699/0xb016c:      9223       3      0 gettid(0x7FFEE822BD70, 0x7FFEE822BD74, 0x0)		 = -1 3
+20699/0xb016c:      9223       2      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      9224       3      0 getegid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      9312       4      1 csops(0x50DB, 0x0, 0x7FFEE822CACC)		 = 0 0
+20699/0xb016c:      9314       2      0 gettid(0x7FFEE822BD40, 0x7FFEE822BD44, 0x0)		 = -1 3
+20699/0xb016c:      9315       2      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      9316       2      0 getegid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:      9361      29     26 stat64("/System/Library/CoreServices/Encodings/libCyrillicConverter.dylib\0", 0x7FFEE822B9B8, 0x0)		 = 0 0
+20699/0xb016c:      9681      50     44 open_nocancel("/usr/share/locale/ru_RU.UTF-8/LC_COLLATE\0", 0x0, 0x7)		 = 3 0
+20699/0xb016c:      9683       5      0 fcntl_nocancel(0x3, 0x3, 0x0)		 = 0 0
+20699/0xb016c:      9685       4      0 getrlimit(0x1008, 0x7FFEE822DEF0, 0x0)		 = 0 0
+20699/0xb016c:      9695       7      3 fstat64(0x3, 0x7FFEE822DE68, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:      9712       8      4 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:      9750      39     35 open_nocancel("/usr/share/locale/ru_RU.UTF-8/LC_CTYPE\0", 0x0, 0x5)		 = 3 0
+20699/0xb016c:      9751       4      0 fcntl_nocancel(0x3, 0x3, 0x0)		 = 0 0
+20699/0xb016c:      9756       6      3 fstat64(0x3, 0x7FFEE822DFA8, 0x0)		 = 0 0
+20699/0xb016c:      9760       5      2 fstat64(0x3, 0x7FFEE822DDA8, 0x0)		 = 0 0
+20699/0xb016c:      9762       3      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:      9763       2      0 lseek(0x3, 0x0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:      9943       5      2 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:      9966      21     17 open_nocancel("/usr/share/locale/ru_RU.UTF-8/LC_MONETARY\0", 0x0, 0x8)		 = 3 0
+20699/0xb016c:      9969       4      1 fstat64(0x3, 0x7FFEE822DFB0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:      9974       4      1 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:      9995      23     19 open_nocancel("/usr/share/locale/ru_RU.UTF-8/LC_NUMERIC\0", 0x0, 0x7)		 = 3 0
+20699/0xb016c:      9998       4      1 fstat64(0x3, 0x7FFEE822DFB0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     10002       4      1 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     10017      17     13 open_nocancel("/usr/share/locale/ru_RU.UTF-8/LC_TIME\0", 0x0, 0x4)		 = 3 0
+20699/0xb016c:     10019       4      1 fstat64(0x3, 0x7FFEE822DFB0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     10024       4      1 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     10041      18     14 open_nocancel("/usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/LC_MESSAGES\0", 0x0, 0xFFFFFFFFFFFFFFF4)		 = 3 0
+20699/0xb016c:     10043       4      1 fstat64(0x3, 0x7FFEE822DFB0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     10047       4      1 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     10683    2610    525 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = 0 0
+20699/0xb016c:     10740      31     25 readlink("/usr/local/bin/python3\0", 0x7FFEE8229B30, 0x400)		 = 34 0
+20699/0xb016c:     10756      15     12 readlink("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/python3\0", 0x7FFEE8229B30, 0x400)		 = -1 2
+20699/0xb016c:     10785      16     12 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/pyvenv.cfg\0", 0x0, 0x1B6)		 = -1 2
+20699/0xb016c:     10807      11      8 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/pyvenv.cfg\0", 0x0, 0x1B6)		 = -1 2
+20699/0xb016c:     10816       9      6 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/Modules/Setup\0", 0x7FFEE822C3F0, 0x0)		 = -1 2
+20699/0xb016c:     10823       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10835       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/lib/python3.7/os.pyc\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10842       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10849       7      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/lib/python3.7/os.pyc\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10856       7      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10863       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/lib/python3.7/os.pyc\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10871       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10878       7      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/lib/python3.7/os.pyc\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10885       8      6 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10892       7      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../lib/python3.7/os.pyc\0", 0x7FFEE8229EC8, 0x0)		 = -1 2
+20699/0xb016c:     10903      12      9 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py\0", 0x7FFEE8229EC8, 0x0)		 = 0 0
+20699/0xb016c:     10913       8      6 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/pybuilddir.txt\0", 0x7FFEE822BFE0, 0x0)		 = -1 2
+20699/0xb016c:     10921       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/bin/lib/python3.7/lib-dynload\0", 0x7FFEE822BFE0, 0x0)		 = -1 2
+20699/0xb016c:     10928       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/3.7.5/lib/python3.7/lib-dynload\0", 0x7FFEE822BFE0, 0x0)		 = -1 2
+20699/0xb016c:     10935       7      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/python/lib/python3.7/lib-dynload\0", 0x7FFEE822BFE0, 0x0)		 = -1 2
+20699/0xb016c:     10942       7      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../Cellar/lib/python3.7/lib-dynload\0", 0x7FFEE822BFE0, 0x0)		 = -1 2
+20699/0xb016c:     10949       8      5 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/../lib/python3.7/lib-dynload\0", 0x7FFEE822BFE0, 0x0)		 = -1 2
+20699/0xb016c:     10959      11      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822BFE0, 0x0)		 = 0 0
+20699/0xb016c:     11004       5      2 ioctl(0x0, 0x4004667A, 0x7FFEE822E524)		 = 0 0
+20699/0xb016c:     11030       7      4 getentropy(0x107BE21D8, 0x18, 0x0)		 = 0 0
+20699/0xb016c:     11123      10      4 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107C63000 0
+20699/0xb016c:     12134       7      3 fstat64(0x0, 0x7FFEE822E2E8, 0x0)		 = 0 0
+20699/0xb016c:     12263       5      1 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107CA3000 0
+20699/0xb016c:     13598       6      2 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107CED000 0
+20699/0xb016c:     14663       5      1 madvise(0x107CE3000, 0xA000, 0x9)		 = 0 0
+20699/0xb016c:     14835       5      0 sigaltstack(0x107BE1ED8, 0x107BE1EF0, 0x0)		 = 0 0
+20699/0xb016c:     14905      28     24 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python37.zip\0", 0x7FFEE822C970, 0x0)		 = -1 2
+20699/0xb016c:     14922      15     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib\0", 0x7FFEE822C970, 0x0)		 = 0 0
+20699/0xb016c:     14941      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python37.zip\0", 0x7FFEE822C3B0, 0x0)		 = -1 2
+20699/0xb016c:     14981      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822C970, 0x0)		 = 0 0
+20699/0xb016c:     14993      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822C3B0, 0x0)		 = 0 0
+20699/0xb016c:     15034      12      9 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822CBF0, 0x0)		 = 0 0
+20699/0xb016c:     15095      51     46 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     15106      15      8 sysctlbyname(kern.secure_kernel, 0x12, 0x7FFEE822C3A4, 0x7FFEE822C3A8, 0x0)		 = 0 0
+20699/0xb016c:     15111       7      4 fstatfs64(0x3, 0x7FFEE822C3A8, 0x0)		 = 0 0
+20699/0xb016c:     15409     513    287 getdirentries64(0x3, 0x7FE19F823400, 0x2000)		 = 8008 0
+20699/0xb016c:     15491      11      6 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     15600      19     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__init__.cpython-37m-darwin.so\0", 0x7FFEE822C7D0, 0x0)		 = -1 2
+20699/0xb016c:     15620      10      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__init__.abi3.so\0", 0x7FFEE822C7D0, 0x0)		 = -1 2
+20699/0xb016c:     15634      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__init__.so\0", 0x7FFEE822C7D0, 0x0)		 = -1 2
+20699/0xb016c:     15651      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__init__.py\0", 0x7FFEE822C7D0, 0x0)		 = 0 0
+20699/0xb016c:     15755       7      3 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107D80000 0
+20699/0xb016c:     15805      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__init__.py\0", 0x7FFEE822CFB0, 0x0)		 = 0 0
+20699/0xb016c:     15885      44     41 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__pycache__/__init__.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     15896       3      0 fcntl(0x3, 0x1, 0x0)		 = 1 0
+20699/0xb016c:     15898       4      1 fstat64(0x3, 0x7FFEE822D1D8, 0x0)		 = 0 0
+20699/0xb016c:     15912       3      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     15914       3      0 fstat64(0x3, 0x7FFEE822D1C0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     16081      16     11 close(0x3)		 = 0 0
+20699/0xb016c:     16308      43     38 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822BB90, 0x0)		 = 0 0
+20699/0xb016c:     16346      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py\0", 0x7FFEE822B770, 0x0)		 = 0 0
+20699/0xb016c:     16417      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py\0", 0x7FFEE822BF50, 0x0)		 = 0 0
+20699/0xb016c:     16476      52     49 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/codecs.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     16479       5      1 fstat64(0x3, 0x7FFEE822C178, 0x0)		 = 0 0
+20699/0xb016c:     16486       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     16487       3      0 fstat64(0x3, 0x7FFEE822C160, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     16675      14     10 close(0x3)		 = 0 0
+20699/0xb016c:     16934       5      1 madvise(0x107CE3000, 0xA000, 0x9)		 = 0 0
+20699/0xb016c:     17418      51     45 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings\0", 0x7FFEE822B080, 0x0)		 = 0 0
+20699/0xb016c:     17442      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings\0", 0x7FFEE822AAC0, 0x0)		 = 0 0
+20699/0xb016c:     17498      25     21 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings\0", 0x7FFEE822B300, 0x0)		 = 0 0
+20699/0xb016c:     17562      58     53 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     17569       8      4 fstatfs64(0x3, 0x7FFEE822AAB8, 0x0)		 = 0 0
+20699/0xb016c:     18373    1930    794 getdirentries64(0x3, 0x7FE19F82C600, 0x2000)		 = 5112 0
+20699/0xb016c:     18458      30     18 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     18641      63     58 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/aliases.py\0", 0x7FFEE822AEE0, 0x0)		 = 0 0
+20699/0xb016c:     18757      16     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/aliases.py\0", 0x7FFEE822B6C0, 0x0)		 = 0 0
+20699/0xb016c:     18834      64     61 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__pycache__/aliases.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     18838       5      2 fstat64(0x3, 0x7FFEE822B8E8, 0x0)		 = 0 0
+20699/0xb016c:     18846       5      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     18847       3      0 fstat64(0x3, 0x7FFEE822B8D0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     18946      12      8 close(0x3)		 = 0 0
+20699/0xb016c:     19363      29     24 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings\0", 0x7FFEE822CBF0, 0x0)		 = 0 0
+20699/0xb016c:     19396      15     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/utf_8.py\0", 0x7FFEE822C7D0, 0x0)		 = 0 0
+20699/0xb016c:     19465      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/utf_8.py\0", 0x7FFEE822CFB0, 0x0)		 = 0 0
+20699/0xb016c:     19517      45     42 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__pycache__/utf_8.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     19520       4      1 fstat64(0x3, 0x7FFEE822D1D8, 0x0)		 = 0 0
+20699/0xb016c:     19524       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     19525       3      0 fstat64(0x3, 0x7FFEE822D1C0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     19634       8      5 close(0x3)		 = 0 0
+20699/0xb016c:     19823       5      1 sigaction(0xD, 0x7FFEE822E508, 0x7FFEE822E530)		 = 0 0
+20699/0xb016c:     19824       3      0 sigaction(0x19, 0x7FFEE822E508, 0x7FFEE822E530)		 = 0 0
+20699/0xb016c:     19896       3      0 sigaction(0x1, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19897       3      0 sigaction(0x2, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19897       2      0 sigaction(0x3, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19898       2      0 sigaction(0x4, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19899       3      0 sigaction(0x5, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19899       3      0 sigaction(0x6, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19900       2      0 sigaction(0x7, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19901       3      0 sigaction(0x8, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19901       2      0 sigaction(0xA, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19902       2      0 sigaction(0xB, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19903       2      0 sigaction(0xC, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19903       3      0 sigaction(0xD, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19904       3      0 sigaction(0xE, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19905       2      0 sigaction(0xF, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19905       2      0 sigaction(0x10, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19906       2      0 sigaction(0x12, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19907       2      0 sigaction(0x13, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19907       2      0 sigaction(0x14, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19908       2      0 sigaction(0x15, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19909       2      0 sigaction(0x16, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19909       2      0 sigaction(0x17, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19910       2      0 sigaction(0x18, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19910       2      0 sigaction(0x19, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19911       2      0 sigaction(0x1A, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19912       2      0 sigaction(0x1B, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19912       3      0 sigaction(0x1C, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19913       2      0 sigaction(0x1D, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19914       2      0 sigaction(0x1E, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19914       2      0 sigaction(0x1F, 0x0, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     19915       2      0 sigaction(0x2, 0x7FFEE822D238, 0x7FFEE822D270)		 = 0 0
+20699/0xb016c:     20041      27     24 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings\0", 0x7FFEE822CC40, 0x0)		 = 0 0
+20699/0xb016c:     20074      14     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/latin_1.py\0", 0x7FFEE822C820, 0x0)		 = 0 0
+20699/0xb016c:     20132      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/latin_1.py\0", 0x7FFEE822D000, 0x0)		 = 0 0
+20699/0xb016c:     20182      44     42 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/encodings/__pycache__/latin_1.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     20185       4      1 fstat64(0x3, 0x7FFEE822D228, 0x0)		 = 0 0
+20699/0xb016c:     20189       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     20190       3      0 fstat64(0x3, 0x7FFEE822D210, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     20294       8      5 close(0x3)		 = 0 0
+20699/0xb016c:     20630      24     20 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822CC40, 0x0)		 = 0 0
+20699/0xb016c:     20662      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/io.py\0", 0x7FFEE822C820, 0x0)		 = 0 0
+20699/0xb016c:     20718      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/io.py\0", 0x7FFEE822D000, 0x0)		 = 0 0
+20699/0xb016c:     20765      41     38 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/io.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     20767       3      1 fstat64(0x3, 0x7FFEE822D228, 0x0)		 = 0 0
+20699/0xb016c:     20771       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     20773       3      0 fstat64(0x3, 0x7FFEE822D210, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     20869       7      4 close(0x3)		 = 0 0
+20699/0xb016c:     20966      22     19 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     20996      13     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/abc.py\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     21056      13     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/abc.py\0", 0x7FFEE822BFA0, 0x0)		 = 0 0
+20699/0xb016c:     21100      39     37 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/abc.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     21102       3      1 fstat64(0x3, 0x7FFEE822C1C8, 0x0)		 = 0 0
+20699/0xb016c:     21106       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     21108       3      0 fstat64(0x3, 0x7FFEE822C1B0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     21221      12      7 close(0x3)		 = 0 0
+20699/0xb016c:     21774       8      3 fstat64(0x0, 0x7FFEE822E3C0, 0x0)		 = 0 0
+20699/0xb016c:     21783       3      0 fstat64(0x0, 0x7FFEE822DE08, 0x0)		 = 0 0
+20699/0xb016c:     21789       5      1 ioctl(0x0, 0x4004667A, 0x7FFEE822DE64)		 = 0 0
+20699/0xb016c:     21804       4      1 lseek(0x0, 0x0, 0x1)		 = 222130 0
+20699/0xb016c:     21810       3      0 ioctl(0x0, 0x4004667A, 0x7FFEE822E154)		 = 0 0
+20699/0xb016c:     21824       2      0 ioctl(0x0, 0x4004667A, 0x7FFEE822E0A4)		 = 0 0
+20699/0xb016c:     21854       4      1 fstat64(0x1, 0x7FFEE822E3C0, 0x0)		 = 0 0
+20699/0xb016c:     21858       3      0 fstat64(0x1, 0x7FFEE822DE08, 0x0)		 = 0 0
+20699/0xb016c:     21860       2      0 ioctl(0x1, 0x4004667A, 0x7FFEE822DE64)		 = 0 0
+20699/0xb016c:     21866       2      0 lseek(0x1, 0x0, 0x1)		 = 222130 0
+20699/0xb016c:     21868       3      0 ioctl(0x1, 0x4004667A, 0x7FFEE822E154)		 = 0 0
+20699/0xb016c:     21871       2      0 ioctl(0x1, 0x4004667A, 0x7FFEE822E0A4)		 = 0 0
+20699/0xb016c:     21879       2      0 lseek(0x1, 0x0, 0x1)		 = 222130 0
+20699/0xb016c:     21883       3      0 fstat64(0x2, 0x7FFEE822E3C0, 0x0)		 = 0 0
+20699/0xb016c:     21886       3      0 fstat64(0x2, 0x7FFEE822DE08, 0x0)		 = 0 0
+20699/0xb016c:     21888       2      0 ioctl(0x2, 0x4004667A, 0x7FFEE822DE64)		 = 0 0
+20699/0xb016c:     21892       2      0 lseek(0x2, 0x0, 0x1)		 = 222130 0
+20699/0xb016c:     21894       2      0 ioctl(0x2, 0x4004667A, 0x7FFEE822E154)		 = 0 0
+20699/0xb016c:     21896       2      0 ioctl(0x2, 0x4004667A, 0x7FFEE822E0A4)		 = 0 0
+20699/0xb016c:     21901       2      0 lseek(0x2, 0x0, 0x1)		 = 222130 0
+20699/0xb016c:     21968      31     28 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822CCA0, 0x0)		 = 0 0
+20699/0xb016c:     22002      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site.py\0", 0x7FFEE822C880, 0x0)		 = 0 0
+20699/0xb016c:     22059      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site.py\0", 0x7FFEE822D060, 0x0)		 = 0 0
+20699/0xb016c:     22109      45     42 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/site.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     22111       3      1 fstat64(0x3, 0x7FFEE822D288, 0x0)		 = 0 0
+20699/0xb016c:     22115       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     22116       3      0 fstat64(0x3, 0x7FFEE822D270, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     22277      14     10 close(0x3)		 = 0 0
+20699/0xb016c:     22552      48     42 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822BC40, 0x0)		 = 0 0
+20699/0xb016c:     22596      18     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     22626      11      4 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107E20000 0
+20699/0xb016c:     22700      21     17 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/os.py\0", 0x7FFEE822C000, 0x0)		 = 0 0
+20699/0xb016c:     22767      58     55 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/os.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     22771       5      1 fstat64(0x3, 0x7FFEE822C228, 0x0)		 = 0 0
+20699/0xb016c:     22783       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     22784       3      0 fstat64(0x3, 0x7FFEE822C210, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     22992      13     10 close(0x3)		 = 0 0
+20699/0xb016c:     23345      48     42 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822ABE0, 0x0)		 = 0 0
+20699/0xb016c:     23391      19     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/stat.py\0", 0x7FFEE822A7C0, 0x0)		 = 0 0
+20699/0xb016c:     23471      17     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/stat.py\0", 0x7FFEE822AFA0, 0x0)		 = 0 0
+20699/0xb016c:     23536      58     54 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/stat.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     23540       5      1 fstat64(0x3, 0x7FFEE822B1C8, 0x0)		 = 0 0
+20699/0xb016c:     23548       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     23549       3      0 fstat64(0x3, 0x7FFEE822B1B0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     23771      24     16 close(0x3)		 = 0 0
+20699/0xb016c:     24242      51     44 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822ABE0, 0x0)		 = 0 0
+20699/0xb016c:     24286      19     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/posixpath.py\0", 0x7FFEE822A7C0, 0x0)		 = 0 0
+20699/0xb016c:     24364      19     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/posixpath.py\0", 0x7FFEE822AFA0, 0x0)		 = 0 0
+20699/0xb016c:     24427      55     52 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/posixpath.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     24431       5      1 fstat64(0x3, 0x7FFEE822B1C8, 0x0)		 = 0 0
+20699/0xb016c:     24437       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     24438       3      0 fstat64(0x3, 0x7FFEE822B1B0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     24583      11      8 close(0x3)		 = 0 0
+20699/0xb016c:     24928      44     39 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8229B80, 0x0)		 = 0 0
+20699/0xb016c:     24973      17     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/genericpath.py\0", 0x7FFEE8229760, 0x0)		 = 0 0
+20699/0xb016c:     25046      15     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/genericpath.py\0", 0x7FFEE8229F40, 0x0)		 = 0 0
+20699/0xb016c:     25107      54     51 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/genericpath.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     25110       5      1 fstat64(0x3, 0x7FFEE822A168, 0x0)		 = 0 0
+20699/0xb016c:     25116       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     25117       3      0 fstat64(0x3, 0x7FFEE822A150, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     25305      14     11 close(0x3)		 = 0 0
+20699/0xb016c:     25772      52     46 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822ABE0, 0x0)		 = 0 0
+20699/0xb016c:     25820      21     17 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_collections_abc.py\0", 0x7FFEE822A7C0, 0x0)		 = 0 0
+20699/0xb016c:     25907      19     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_collections_abc.py\0", 0x7FFEE822AFA0, 0x0)		 = 0 0
+20699/0xb016c:     25978      63     59 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/_collections_abc.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     25982       5      1 fstat64(0x3, 0x7FFEE822B1C8, 0x0)		 = 0 0
+20699/0xb016c:     25990       5      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     25991       3      0 fstat64(0x3, 0x7FFEE822B1B0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     26187      14     11 close(0x3)		 = 0 0
+20699/0xb016c:     27086      16      6 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107E60000 0
+20699/0xb016c:     27864      50     45 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822BC40, 0x0)		 = 0 0
+20699/0xb016c:     27903      17     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_sitebuiltins.py\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     27977      16     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/_sitebuiltins.py\0", 0x7FFEE822C000, 0x0)		 = 0 0
+20699/0xb016c:     28045      59     56 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/_sitebuiltins.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     28048       5      1 fstat64(0x3, 0x7FFEE822C228, 0x0)		 = 0 0
+20699/0xb016c:     28054       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     28055       3      0 fstat64(0x3, 0x7FFEE822C210, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     28147      11      7 close(0x3)		 = 0 0
+20699/0xb016c:     28447      36     32 stat64("/usr/local/bin/pyvenv.cfg\0", 0x7FFEE822C700, 0x0)		 = -1 2
+20699/0xb016c:     28467      12      9 stat64("/usr/local/pyvenv.cfg\0", 0x7FFEE822C700, 0x0)		 = -1 2
+20699/0xb016c:     28502       4      0 geteuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:     28513       3      0 getuid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:     28523       3      0 getegid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:     28532       3      0 getgid(0x0, 0x0, 0x0)		 = 0 0
+20699/0xb016c:     28597      22     19 stat64("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x7FFEE822CA00, 0x0)		 = 0 0
+20699/0xb016c:     28663      42     37 open_nocancel("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     28670       8      4 fstatfs64(0x3, 0x7FFEE822C0C8, 0x0)		 = 0 0
+20699/0xb016c:     29091    1458    418 getdirentries64(0x3, 0x7FE19F833800, 0x2000)		 = 840 0
+20699/0xb016c:     29132      22     13 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     29405     385    198 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages\0", 0x7FFEE822C910, 0x0)		 = 0 0
+20699/0xb016c:     29577      98     88 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     29585      11      4 fstatfs64(0x3, 0x7FFEE822BFD8, 0x0)		 = 0 0
+20699/0xb016c:     29765     649    175 getdirentries64(0x3, 0x7FE19F833800, 0x2000)		 = 512 0
+20699/0xb016c:     29784      11      5 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     29929      27     22 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     29972      16     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822B5A0, 0x0)		 = 0 0
+20699/0xb016c:     29989      12      9 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822AFE0, 0x0)		 = 0 0
+20699/0xb016c:     30019      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     30064      43     39 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     30068       6      2 fstatfs64(0x3, 0x7FFEE822AFD8, 0x0)		 = 0 0
+20699/0xb016c:     30351    1044    279 getdirentries64(0x3, 0x7FE19F833800, 0x2000)		 = 4136 0
+20699/0xb016c:     30400      17     10 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     30529      41     36 stat64("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x7FFEE822B5A0, 0x0)		 = 0 0
+20699/0xb016c:     30547       9      6 stat64("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x7FFEE822AFE0, 0x0)		 = 0 0
+20699/0xb016c:     30587      10      7 stat64("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     30623      34     28 open_nocancel("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     30630       9      4 fstatfs64(0x3, 0x7FFEE822AFD8, 0x0)		 = 0 0
+20699/0xb016c:     30673      40     35 getdirentries64(0x3, 0x7FE1A0014400, 0x2000)		 = 840 0
+20699/0xb016c:     30683       6      2 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     30749      33     29 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages\0", 0x7FFEE822B5A0, 0x0)		 = 0 0
+20699/0xb016c:     30767      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages\0", 0x7FFEE822AFE0, 0x0)		 = 0 0
+20699/0xb016c:     30798      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     30836      37     33 open_nocancel("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     30839       5      1 fstatfs64(0x3, 0x7FFEE822AFD8, 0x0)		 = 0 0
+20699/0xb016c:     30860      23     19 getdirentries64(0x3, 0x7FE1A0014400, 0x2000)		 = 512 0
+20699/0xb016c:     30868       5      2 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     30943      55     52 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sitecustomize.py\0", 0x7FFEE822B400, 0x0)		 = 0 0
+20699/0xb016c:     31034      19     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sitecustomize.py\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     31126      83     79 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/__pycache__/sitecustomize.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     31130       5      1 fstat64(0x3, 0x7FFEE822BE08, 0x0)		 = 0 0
+20699/0xb016c:     31137       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     31139       3      0 fstat64(0x3, 0x7FFEE822BDF0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     31229      11      8 close(0x3)		 = 0 0
+20699/0xb016c:     31411      36     28 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822A7C0, 0x0)		 = 0 0
+20699/0xb016c:     31452      18     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py\0", 0x7FFEE822A3A0, 0x0)		 = 0 0
+20699/0xb016c:     31542      23     19 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py\0", 0x7FFEE822AB80, 0x0)		 = 0 0
+20699/0xb016c:     31601      52     48 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/re.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     31605       7      1 fstat64(0x3, 0x7FFEE822ADA8, 0x0)		 = 0 0
+20699/0xb016c:     31612       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     31613       3      0 fstat64(0x3, 0x7FFEE822AD90, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     31764       9      6 close(0x3)		 = 0 0
+20699/0xb016c:     31987       6      1 madvise(0x107D2D000, 0x13000, 0x9)		 = 0 0
+20699/0xb016c:     32098      30     26 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8229760, 0x0)		 = 0 0
+20699/0xb016c:     32140      17     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/enum.py\0", 0x7FFEE8229340, 0x0)		 = 0 0
+20699/0xb016c:     32217      16     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/enum.py\0", 0x7FFEE8229B20, 0x0)		 = 0 0
+20699/0xb016c:     32272      49     45 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/enum.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     32274       4      1 fstat64(0x3, 0x7FFEE8229D48, 0x0)		 = 0 0
+20699/0xb016c:     32280       4      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     32281       4      0 fstat64(0x3, 0x7FFEE8229D30, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     32491      22     17 close(0x3)		 = 0 0
+20699/0xb016c:     33221      49     41 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8228700, 0x0)		 = 0 0
+20699/0xb016c:     33290      30     25 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/types.py\0", 0x7FFEE82282E0, 0x0)		 = 0 0
+20699/0xb016c:     33478      42     36 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/types.py\0", 0x7FFEE8228AC0, 0x0)		 = 0 0
+20699/0xb016c:     33592      94     89 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/types.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     33619       9      3 fstat64(0x3, 0x7FFEE8228CE8, 0x0)		 = 0 0
+20699/0xb016c:     33633       8      2 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     33636       5      1 fstat64(0x3, 0x7FFEE8228CD0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     33968      18     14 close(0x3)		 = 0 0
+20699/0xb016c:     35118      33     14 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107EC5000 0
+20699/0xb016c:     35806      52     46 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8229760, 0x0)		 = 0 0
+20699/0xb016c:     35906      52     46 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_compile.py\0", 0x7FFEE8229340, 0x0)		 = 0 0
+20699/0xb016c:     36051      40     33 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_compile.py\0", 0x7FFEE8229B20, 0x0)		 = 0 0
+20699/0xb016c:     36188     120    113 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/sre_compile.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     36195       9      3 fstat64(0x3, 0x7FFEE8229D48, 0x0)		 = 0 0
+20699/0xb016c:     36212       7      2 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     36214       5      1 fstat64(0x3, 0x7FFEE8229D30, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     36659      50     40 close(0x3)		 = 0 0
+20699/0xb016c:     37552      66     58 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8228700, 0x0)		 = 0 0
+20699/0xb016c:     37636      22     17 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_parse.py\0", 0x7FFEE82282E0, 0x0)		 = 0 0
+20699/0xb016c:     37750      22     17 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_parse.py\0", 0x7FFEE8228AC0, 0x0)		 = 0 0
+20699/0xb016c:     37847      88     83 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/sre_parse.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     37854       9      3 fstat64(0x3, 0x7FFEE8228CE8, 0x0)		 = 0 0
+20699/0xb016c:     37864       5      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     37865       3      0 fstat64(0x3, 0x7FFEE8228CD0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     38338      14     10 close(0x3)		 = 0 0
+20699/0xb016c:     38762      59     52 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE82276A0, 0x0)		 = 0 0
+20699/0xb016c:     38814      20     16 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_constants.py\0", 0x7FFEE8227280, 0x0)		 = 0 0
+20699/0xb016c:     38927      18     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/sre_constants.py\0", 0x7FFEE8227A60, 0x0)		 = 0 0
+20699/0xb016c:     38998      61     58 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/sre_constants.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     39002       5      2 fstat64(0x3, 0x7FFEE8227C88, 0x0)		 = 0 0
+20699/0xb016c:     39011       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     39012       3      1 fstat64(0x3, 0x7FFEE8227C70, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     39168      31     28 close(0x3)		 = 0 0
+20699/0xb016c:     40056      69     59 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8229760, 0x0)		 = 0 0
+20699/0xb016c:     40136      33     26 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/functools.py\0", 0x7FFEE8229340, 0x0)		 = 0 0
+20699/0xb016c:     40293      18     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/functools.py\0", 0x7FFEE8229B20, 0x0)		 = 0 0
+20699/0xb016c:     40400      98     93 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/functools.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     40408       8      3 fstat64(0x3, 0x7FFEE8229D48, 0x0)		 = 0 0
+20699/0xb016c:     40427       9      3 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     40428       3      0 fstat64(0x3, 0x7FFEE8229D30, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     40731      11      7 close(0x3)		 = 0 0
+20699/0xb016c:     41799      51     46 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8228700, 0x0)		 = 0 0
+20699/0xb016c:     41825      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/collections/__init__.cpython-37m-darwin.so\0", 0x7FFEE82282E0, 0x0)	 = -1 2
+20699/0xb016c:     41845      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/collections/__init__.abi3.so\0", 0x7FFEE82282E0, 0x0)		 = -1 2
+20699/0xb016c:     41858       9      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/collections/__init__.so\0", 0x7FFEE82282E0, 0x0)		 = -1 2
+20699/0xb016c:     41874      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/collections/__init__.py\0", 0x7FFEE82282E0, 0x0)		 = 0 0
+20699/0xb016c:     41930      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/collections/__init__.py\0", 0x7FFEE8228AC0, 0x0)		 = 0 0
+20699/0xb016c:     41983      49     44 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/collections/__pycache__/__init__.cpython-37.pyc\0", 0x1000000, 0x1B6)	 = 3 0
+20699/0xb016c:     41986       4      1 fstat64(0x3, 0x7FFEE8228CE8, 0x0)		 = 0 0
+20699/0xb016c:     41991       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     41992       3      0 fstat64(0x3, 0x7FFEE8228CD0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     42099      12      9 close(0x3)		 = 0 0
+20699/0xb016c:     42304      14      5 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107F05000 0
+20699/0xb016c:     42560      10      2 madvise(0x107D2D000, 0x13000, 0x9)		 = 0 0
+20699/0xb016c:     42659      43     39 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE82276A0, 0x0)		 = 0 0
+20699/0xb016c:     42699      17     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/operator.py\0", 0x7FFEE8227280, 0x0)		 = 0 0
+20699/0xb016c:     42774      16     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/operator.py\0", 0x7FFEE8227A60, 0x0)		 = 0 0
+20699/0xb016c:     42833      52     49 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/operator.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     42836       5      1 fstat64(0x3, 0x7FFEE8227C88, 0x0)		 = 0 0
+20699/0xb016c:     42842       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     42843       3      0 fstat64(0x3, 0x7FFEE8227C70, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     42964       9      6 close(0x3)		 = 0 0
+20699/0xb016c:     43512      37     31 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE82276A0, 0x0)		 = 0 0
+20699/0xb016c:     43545      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/keyword.py\0", 0x7FFEE8227280, 0x0)		 = 0 0
+20699/0xb016c:     43612      19     15 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/keyword.py\0", 0x7FFEE8227A60, 0x0)		 = 0 0
+20699/0xb016c:     43674      54     50 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/keyword.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     43677       4      1 fstat64(0x3, 0x7FFEE8227C88, 0x0)		 = 0 0
+20699/0xb016c:     43682       3      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     43683       3      0 fstat64(0x3, 0x7FFEE8227C70, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     43806       9      6 close(0x3)		 = 0 0
+20699/0xb016c:     43950      29     25 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE82276A0, 0x0)		 = 0 0
+20699/0xb016c:     43982      15     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/heapq.py\0", 0x7FFEE8227280, 0x0)		 = 0 0
+20699/0xb016c:     44041      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/heapq.py\0", 0x7FFEE8227A60, 0x0)		 = 0 0
+20699/0xb016c:     44093      46     43 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/heapq.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     44095       4      1 fstat64(0x3, 0x7FFEE8227C88, 0x0)		 = 0 0
+20699/0xb016c:     44100       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     44101       3      0 fstat64(0x3, 0x7FFEE8227C70, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     44184      12      9 close(0x3)		 = 0 0
+20699/0xb016c:     44388      41     36 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8226640, 0x0)		 = 0 0
+20699/0xb016c:     44432      17     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE8226640, 0x0)		 = 0 0
+20699/0xb016c:     44455      16     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_heapq.cpython-37m-darwin.so\0", 0x7FFEE8226220, 0x0)		 = 0 0
+20699/0xb016c:     44530      17     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_heapq.cpython-37m-darwin.so\0", 0x7FFEE8225850, 0x0)		 = 0 0
+20699/0xb016c:     44543      10      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_heapq.cpython-37m-darwin.so\0", 0x7FFEE8225C98, 0x0)		 = 0 0
+20699/0xb016c:     44590      48     45 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_heapq.cpython-37m-darwin.so\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:     44744      19     13 fcntl(0x3, 0x62, 0x7FFEE821D420)		 = 0 0
+20699/0xb016c:     44761      12     10 fcntl(0x3, 0x65, 0x7FFEE821D5E8)		 = 0 0
+20699/0xb016c:     44805     608     42 mmap(0x107F45000, 0x2000, 0x5, 0x12, 0x3, 0x0)		 = 0x107F45000 0
+20699/0xb016c:     44824      18     11 mmap(0x107F47000, 0x1000, 0x3, 0x12, 0x3, 0x2000)		 = 0x107F47000 0
+20699/0xb016c:     44827       6      3 mmap(0x107F48000, 0x2000, 0x3, 0x12, 0x3, 0x3000)		 = 0x107F48000 0
+20699/0xb016c:     44830       5      2 mmap(0x107F4A000, 0x714, 0x1, 0x12, 0x3, 0x5000)		 = 0x107F4A000 0
+20699/0xb016c:     44854      10      7 close(0x3)		 = 0 0
+20699/0xb016c:     44942      10      5 mprotect(0x107F47000, 0x1000, 0x1)		 = 0 0
+20699/0xb016c:     45303      42     37 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE82276A0, 0x0)		 = 0 0
+20699/0xb016c:     45343      17     14 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/reprlib.py\0", 0x7FFEE8227280, 0x0)		 = 0 0
+20699/0xb016c:     45419      17     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/reprlib.py\0", 0x7FFEE8227A60, 0x0)		 = 0 0
+20699/0xb016c:     45478      52     49 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/reprlib.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     45481       4      1 fstat64(0x3, 0x7FFEE8227C88, 0x0)		 = 0 0
+20699/0xb016c:     45488       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     45489       3      0 fstat64(0x3, 0x7FFEE8227C70, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     45585      12      9 close(0x3)		 = 0 0
+20699/0xb016c:     46654       8      1 madvise(0x107CE3000, 0xA000, 0x9)		 = 0 0
+20699/0xb016c:     47401      11      4 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x107F4B000 0
+20699/0xb016c:     47480      39     36 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE8229760, 0x0)		 = 0 0
+20699/0xb016c:     47513      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/copyreg.py\0", 0x7FFEE8229340, 0x0)		 = 0 0
+20699/0xb016c:     47571      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/copyreg.py\0", 0x7FFEE8229B20, 0x0)		 = 0 0
+20699/0xb016c:     47626      49     46 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/copyreg.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     47629       4      1 fstat64(0x3, 0x7FFEE8229D48, 0x0)		 = 0 0
+20699/0xb016c:     47634       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     47635       3      0 fstat64(0x3, 0x7FFEE8229D30, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     47781      11      8 close(0x3)		 = 0 0
+20699/0xb016c:     48010      24     18 lstat64("/usr\0", 0x7FFEE822B580, 0x0)		 = 0 0
+20699/0xb016c:     48045      23     20 lstat64("/usr/local\0", 0x7FFEE822B580, 0x0)		 = 0 0
+20699/0xb016c:     48064      13     10 lstat64("/usr/local/bin\0", 0x7FFEE822B580, 0x0)		 = 0 0
+20699/0xb016c:     48082      12      9 lstat64("/usr/local/bin/python3\0", 0x7FFEE822B580, 0x0)		 = 0 0
+20699/0xb016c:     48096      12      8 readlink("/usr/local/bin/python3\0", 0x7FFEE822B490, 0x400)		 = 34 0
+20699/0xb016c:     48120      12      9 lstat64("/usr/local/Cellar\0", 0x7FFEE822B370, 0x0)		 = 0 0
+20699/0xb016c:     48135      11      8 lstat64("/usr/local/Cellar/python\0", 0x7FFEE822B370, 0x0)		 = 0 0
+20699/0xb016c:     48149      11      7 lstat64("/usr/local/Cellar/python/3.7.5\0", 0x7FFEE822B370, 0x0)		 = 0 0
+20699/0xb016c:     48164      11      8 lstat64("/usr/local/Cellar/python/3.7.5/bin\0", 0x7FFEE822B370, 0x0)		 = 0 0
+20699/0xb016c:     48179      11      8 lstat64("/usr/local/Cellar/python/3.7.5/bin/python3\0", 0x7FFEE822B370, 0x0)		 = 0 0
+20699/0xb016c:     48191      10      7 readlink("/usr/local/Cellar/python/3.7.5/bin/python3\0", 0x7FFEE822B280, 0x400)		 = 55 0
+20699/0xb016c:     48210      11      8 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks\0", 0x7FFEE822B160, 0x0)		 = 0 0
+20699/0xb016c:     48226      11      9 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework\0", 0x7FFEE822B160, 0x0)		 = 0 0
+20699/0xb016c:     48241      11      8 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions\0", 0x7FFEE822B160, 0x0)		 = 0 0
+20699/0xb016c:     48264      19     16 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7\0", 0x7FFEE822B160, 0x0)		 = 0 0
+20699/0xb016c:     48280      12      9 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin\0", 0x7FFEE822B160, 0x0)		 = 0 0
+20699/0xb016c:     48305      17     14 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3\0", 0x7FFEE822B160, 0x0)		 = 0 0
+20699/0xb016c:     48324      16     12 readlink("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3\0", 0x7FFEE822B070, 0x400)		 = 9 0
+20699/0xb016c:     48364      32     29 lstat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin/python3.7\0", 0x7FFEE822AF50, 0x0)		 = 0 0
+20699/0xb016c:     48929      29     24 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     48962      13      9 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     48990      14     11 stat64("/Users/sergeyantonov/Library/Python/3.7/lib/python/site-packages\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     49017      13     10 stat64("/usr/local/lib/python3.7/site-packages\0", 0x7FFEE822B5A0, 0x0)		 = 0 0
+20699/0xb016c:     49030      10      7 stat64("/usr/local/lib/python3.7/site-packages\0", 0x7FFEE822AFE0, 0x0)		 = 0 0
+20699/0xb016c:     49054      11      8 stat64("/usr/local/lib/python3.7/site-packages\0", 0x7FFEE822B820, 0x0)		 = 0 0
+20699/0xb016c:     49092      37     33 open_nocancel("/usr/local/lib/python3.7/site-packages\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     49098       7      4 fstatfs64(0x3, 0x7FFEE822AFD8, 0x0)		 = 0 0
+20699/0xb016c:     49125      25     21 getdirentries64(0x3, 0x7FE19F849800, 0x2000)		 = 512 0
+20699/0xb016c:     49133       7      2 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     49204       9      6 stat64("get_files.py\0", 0x7FFEE822DED0, 0x0)		 = 0 0
+20699/0xb016c:     49246      42     39 open_nocancel("get_files.py\0", 0x0, 0x1B6)		 = 3 0
+20699/0xb016c:     49265       4      0 ioctl(0x3, 0x20006601, 0x0)		 = 0 0
+20699/0xb016c:     49272       4      1 fstat64(0x3, 0x7FFEE822DC38, 0x0)		 = 0 0
+20699/0xb016c:     49274       3      0 fstat64(0x3, 0x7FFEE822DD40, 0x0)		 = 0 0
+20699/0xb016c:     49276       3      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     49277       2      0 lseek(0x3, 0x0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     49452       6      1 lseek(0x3, 0xFFFFFFFFFFFFFFEA, 0x1)		 = 1204 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     49488      12      8 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     49516      15     12 stat64("get_files.py\0", 0x7FFEE822D8C0, 0x0)		 = 0 0
+20699/0xb016c:     49538       5      1 readlink("get_files.py\0", 0x7FFEE822A100, 0x400)		 = -1 22
+20699/0xb016c:     49555      11      8 stat64("/\0", 0x7FFEE8228340, 0x0)		 = 0 0
+20699/0xb016c:     49586      33     29 open_nocancel(".\0", 0x0, 0x1)		 = 3 0
+20699/0xb016c:     49588       4      1 fstat64(0x3, 0x7FFEE8228140, 0x0)		 = 0 0
+20699/0xb016c:     49592       6      2 fcntl_nocancel(0x3, 0x32, 0x7FFEE822A100)		 = 0 0
+20699/0xb016c:     49594       5      2 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     49611      18     16 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE82280B0, 0x0)		 = 0 0
+20699/0xb016c:     49617       7      4 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE8228340, 0x0)		 = 0 0
+20699/0xb016c:     49627      12      9 getattrlist("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/get_files.py\0", 0x7FFF6FF37944, 0x7FFEE8229C90)		 = 0 0
+20699/0xb016c:     49663      23     19 open_nocancel("get_files.py\0", 0x0, 0x1B6)		 = 3 0
+20699/0xb016c:     49666       3      0 fcntl(0x3, 0x1, 0x0)		 = 0 0
+20699/0xb016c:     49666       2      0 fcntl(0x3, 0x2, 0x1)		 = 0 0
+20699/0xb016c:     49668       4      1 fstat64(0x3, 0x7FFEE822E5D0, 0x0)		 = 0 0
+20699/0xb016c:     49672       4      1 ioctl(0x3, 0x4004667A, 0x7FFEE822E4D4)		 = -1 25
+20699/0xb016c:     49674       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822E4D8)		 = -1 25
+20699/0xb016c:     49683       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     49685       3      0 fstat64(0x3, 0x7FFEE822E348, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     49696       2      0 lseek(0x3, 0xFFFFFFFFFFFFFB38, 0x1)		 = 2 0
+20699/0xb016c:     49697       2      0 lseek(0x3, 0x0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2187 (ID 951: syscall::read_nocancel:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     49914       3      1 madvise(0x107CE3000, 0xA000, 0x9)		 = 0 0
+20699/0xb016c:     50009      10      5 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     50184      24     20 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822C9C0, 0x0)		 = 0 0
+20699/0xb016c:     50197       8      5 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822C400, 0x0)		 = 0 0
+20699/0xb016c:     50224       8      5 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822CC40, 0x0)		 = 0 0
+20699/0xb016c:     50255      30     26 open_nocancel("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     50260       7      3 fstatfs64(0x3, 0x7FFEE822C3F8, 0x0)		 = 0 0
+20699/0xb016c:     50421     688    158 getdirentries64(0x3, 0x7FE19F849800, 0x2000)		 = 376 0
+20699/0xb016c:     50433       9      4 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     50493      26     22 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822CC40, 0x0)		 = 0 0
+20699/0xb016c:     50519      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/hashlib.py\0", 0x7FFEE822C820, 0x0)		 = 0 0
+20699/0xb016c:     50584      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/hashlib.py\0", 0x7FFEE822D000, 0x0)		 = 0 0
+20699/0xb016c:     50633      42     40 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/hashlib.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     50636       5      1 fstat64(0x3, 0x7FFEE822D228, 0x0)		 = 0 0
+20699/0xb016c:     50641       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     50642       3      0 fstat64(0x3, 0x7FFEE822D210, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     50705      10      7 close(0x3)		 = 0 0
+20699/0xb016c:     50874      32     27 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     50925      23     20 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     50953      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     50974      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_hashlib.cpython-37m-darwin.so\0", 0x7FFEE822B7C0, 0x0)	 = 0 0
+20699/0xb016c:     51024      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_hashlib.cpython-37m-darwin.so\0", 0x7FFEE822ADF0, 0x0)	 = 0 0
+20699/0xb016c:     51036      10      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_hashlib.cpython-37m-darwin.so\0", 0x7FFEE822B238, 0x0)	 = 0 0
+20699/0xb016c:     51082      47     45 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_hashlib.cpython-37m-darwin.so\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:     51232      15     10 fcntl(0x3, 0x62, 0x7FFEE82229C0)		 = 0 0
+20699/0xb016c:     51248      11      8 fcntl(0x3, 0x65, 0x7FFEE8222B88)		 = 0 0
+20699/0xb016c:     51293     559     43 mmap(0x107F8B000, 0x4000, 0x5, 0x12, 0x3, 0x0)		 = 0x107F8B000 0
+20699/0xb016c:     51311      17     11 mmap(0x107F8F000, 0x1000, 0x3, 0x12, 0x3, 0x4000)		 = 0x107F8F000 0
+20699/0xb016c:     51314       6      2 mmap(0x107F90000, 0x1000, 0x3, 0x12, 0x3, 0x5000)		 = 0x107F90000 0
+20699/0xb016c:     51317       5      2 mmap(0x107F91000, 0x184C, 0x1, 0x12, 0x3, 0x6000)		 = 0x107F91000 0
+20699/0xb016c:     51339      10      7 close(0x3)		 = 0 0
+20699/0xb016c:     51383      40     37 stat64("/usr/local/opt/openssl@1.1/lib/libssl.1.1.dylib\0", 0x7FFEE822AB40, 0x0)		 = 0 0
+20699/0xb016c:     51398      14     11 stat64("/usr/local/opt/openssl@1.1/lib/libssl.1.1.dylib\0", 0x7FFEE822AF88, 0x0)		 = 0 0
+20699/0xb016c:     51443      46     42 open("/usr/local/opt/openssl@1.1/lib/libssl.1.1.dylib\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:     51674      16     10 fcntl(0x3, 0x62, 0x7FFEE8222710)		 = 0 0
+20699/0xb016c:     51689      12      8 fcntl(0x3, 0x65, 0x7FFEE82228D8)		 = 0 0
+20699/0xb016c:     51734     102     43 mmap(0x107F93000, 0x50000, 0x5, 0x12, 0x3, 0x0)		 = 0x107F93000 0
+20699/0xb016c:     51782    1009     42 mmap(0x107FE3000, 0x8000, 0x3, 0x12, 0x3, 0x50000)		 = 0x107FE3000 0
+20699/0xb016c:     51800      19     13 mmap(0x107FEB000, 0x5000, 0x3, 0x12, 0x3, 0x58000)		 = 0x107FEB000 0
+20699/0xb016c:     51805       7      4 mmap(0x107FF0000, 0x1AA3C, 0x1, 0x12, 0x3, 0x5D000)		 = 0x107FF0000 0
+20699/0xb016c:     51828       9      6 close(0x3)		 = 0 0
+20699/0xb016c:     51869      38     35 stat64("/usr/local/opt/openssl@1.1/lib/libcrypto.1.1.dylib\0", 0x7FFEE822AB40, 0x0)		 = 0 0
+20699/0xb016c:     51885      14     11 stat64("/usr/local/opt/openssl@1.1/lib/libcrypto.1.1.dylib\0", 0x7FFEE822AF88, 0x0)		 = 0 0
+20699/0xb016c:     51928      44     41 open("/usr/local/opt/openssl@1.1/lib/libcrypto.1.1.dylib\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:     52003      13      9 fcntl(0x3, 0x62, 0x7FFEE8222710)		 = 0 0
+20699/0xb016c:     52019      11      8 fcntl(0x3, 0x65, 0x7FFEE82228D8)		 = 0 0
+20699/0xb016c:     52047      31     26 mmap(0x10800B000, 0x19A000, 0x5, 0x12, 0x3, 0x0)		 = 0x10800B000 0
+20699/0xb016c:     52099    1273     50 mmap(0x1081A5000, 0x29000, 0x3, 0x12, 0x3, 0x19A000)		 = 0x1081A5000 0
+20699/0xb016c:     52117      20     15 mmap(0x1081CE000, 0x2000, 0x3, 0x12, 0x3, 0x1C3000)		 = 0x1081CE000 0
+20699/0xb016c:     52129      13     10 mmap(0x1081D3000, 0x62240, 0x1, 0x12, 0x3, 0x1C5000)		 = 0x1081D3000 0
+20699/0xb016c:     52151       8      5 close(0x3)		 = 0 0
+20699/0xb016c:     52183      29     26 stat64("/usr/local/Cellar/openssl@1.1/1.1.1d/lib/libcrypto.1.1.dylib\0", 0x7FFEE822AA60, 0x0)		 = 0 0
+20699/0xb016c:     52195      10      8 stat64("/usr/local/Cellar/openssl@1.1/1.1.1d/lib/libcrypto.1.1.dylib\0", 0x7FFEE822AEA8, 0x0)		 = 0 0
+20699/0xb016c:     53286       7      2 mprotect(0x1081A5000, 0x29000, 0x1)		 = 0 0
+20699/0xb016c:     53289       4      1 mprotect(0x107FE3000, 0x8000, 0x1)		 = 0 0
+20699/0xb016c:     53290       3      0 mprotect(0x107F8F000, 0x1000, 0x1)		 = 0 0
+20699/0xb016c:     53714      19     15 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     53753      16     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     53779      12      9 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     53797      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_blake2.cpython-37m-darwin.so\0", 0x7FFEE822B3A0, 0x0)	 = 0 0
+20699/0xb016c:     53835      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_blake2.cpython-37m-darwin.so\0", 0x7FFEE822A9D0, 0x0)	 = 0 0
+20699/0xb016c:     53845      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_blake2.cpython-37m-darwin.so\0", 0x7FFEE822AE18, 0x0)	 = 0 0
+20699/0xb016c:     53888      44     41 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_blake2.cpython-37m-darwin.so\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:     53942      11      7 fcntl(0x3, 0x62, 0x7FFEE82225A0)		 = 0 0
+20699/0xb016c:     53954       8      6 fcntl(0x3, 0x65, 0x7FFEE8222768)		 = 0 0
+20699/0xb016c:     53983      31     27 mmap(0x108236000, 0x6000, 0x5, 0x12, 0x3, 0x0)		 = 0x108236000 0
+20699/0xb016c:     53999     529     15 mmap(0x10823C000, 0x1000, 0x3, 0x12, 0x3, 0x6000)		 = 0x10823C000 0
+20699/0xb016c:     54016      18     11 mmap(0x10823D000, 0x1000, 0x3, 0x12, 0x3, 0x7000)		 = 0x10823D000 0
+20699/0xb016c:     54020       6      2 mmap(0x10823E000, 0x14D0, 0x1, 0x12, 0x3, 0x8000)		 = 0x10823E000 0
+20699/0xb016c:     54042      10      7 close(0x3)		 = 0 0
+20699/0xb016c:     54141       6      2 mprotect(0x10823C000, 0x1000, 0x1)		 = 0 0
+20699/0xb016c:     54344      34     29 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     54396      23     20 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     54425      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     54445      14     11 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_sha3.cpython-37m-darwin.so\0", 0x7FFEE822B3A0, 0x0)		 = 0 0
+20699/0xb016c:     54495      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_sha3.cpython-37m-darwin.so\0", 0x7FFEE822A9D0, 0x0)		 = 0 0
+20699/0xb016c:     54507      10      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_sha3.cpython-37m-darwin.so\0", 0x7FFEE822AE18, 0x0)		 = 0 0
+20699/0xb016c:     54555      49     46 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload/_sha3.cpython-37m-darwin.so\0", 0x0, 0x0)		 = 3 0
+dtrace: error on enabled probe ID 2201 (ID 465: syscall::pread:return): invalid kernel access in action #13 at DIF offset 20
+20699/0xb016c:     54637      15     10 fcntl(0x3, 0x62, 0x7FFEE82225A0)		 = 0 0
+20699/0xb016c:     54653      11      8 fcntl(0x3, 0x65, 0x7FFEE8222768)		 = 0 0
+20699/0xb016c:     54720     607     59 mmap(0x108240000, 0x11000, 0x5, 0x12, 0x3, 0x0)		 = 0x108240000 0
+20699/0xb016c:     54739      19     12 mmap(0x108251000, 0x1000, 0x3, 0x12, 0x3, 0x11000)		 = 0x108251000 0
+20699/0xb016c:     54743       6      3 mmap(0x108252000, 0x2000, 0x3, 0x12, 0x3, 0x12000)		 = 0x108252000 0
+20699/0xb016c:     54746       5      2 mmap(0x108254000, 0x1860, 0x1, 0x12, 0x3, 0x14000)		 = 0x108254000 0
+20699/0xb016c:     54768      10      7 close(0x3)		 = 0 0
+20699/0xb016c:     54871       7      2 mprotect(0x108251000, 0x1000, 0x1)		 = 0 0
+20699/0xb016c:     55119      35     30 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822CC40, 0x0)		 = 0 0
+20699/0xb016c:     55170      24     20 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822CC40, 0x0)		 = 0 0
+20699/0xb016c:     55198      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/argparse.py\0", 0x7FFEE822C820, 0x0)		 = 0 0
+20699/0xb016c:     55266      16     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/argparse.py\0", 0x7FFEE822D000, 0x0)		 = 0 0
+20699/0xb016c:     55680    1984    405 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/argparse.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     55688       7      2 fstat64(0x3, 0x7FFEE822D228, 0x0)		 = 0 0
+20699/0xb016c:     55700       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     55701       3      0 fstat64(0x3, 0x7FFEE822D210, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     55814      11      8 close(0x3)		 = 0 0
+20699/0xb016c:     56384       8      1 madvise(0x107D2D000, 0x13000, 0x9)		 = 0 0
+20699/0xb016c:     56474      34     29 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     56531      24     21 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822BBE0, 0x0)		 = 0 0
+20699/0xb016c:     56558      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/gettext.py\0", 0x7FFEE822B7C0, 0x0)		 = 0 0
+20699/0xb016c:     56628      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/gettext.py\0", 0x7FFEE822BFA0, 0x0)		 = 0 0
+20699/0xb016c:     56894    1174    256 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/gettext.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     56902       7      2 fstat64(0x3, 0x7FFEE822C1C8, 0x0)		 = 0 0
+20699/0xb016c:     56913       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     56915       3      0 fstat64(0x3, 0x7FFEE822C1B0, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     57026      12      9 close(0x3)		 = 0 0
+20699/0xb016c:     57279      33     28 stat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2\0", 0x7FFEE822AB80, 0x0)		 = 0 0
+20699/0xb016c:     57338      25     21 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7\0", 0x7FFEE822AB80, 0x0)		 = 0 0
+20699/0xb016c:     57365      15     12 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/locale.py\0", 0x7FFEE822A760, 0x0)		 = 0 0
+20699/0xb016c:     57438      16     13 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/locale.py\0", 0x7FFEE822AF40, 0x0)		 = 0 0
+20699/0xb016c:     57496      51     48 open("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/__pycache__/locale.cpython-37.pyc\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     57499       5      1 fstat64(0x3, 0x7FFEE822B168, 0x0)		 = 0 0
+20699/0xb016c:     57505       4      1 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     57507       3      0 fstat64(0x3, 0x7FFEE822B150, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     57686      12      9 close(0x3)		 = 0 0
+20699/0xb016c:     57887      11      4 mmap(0x0, 0x40000, 0x3, 0x1002, 0xFFFFFFFFFFFFFFFF, 0x0)		 = 0x108256000 0
+20699/0xb016c:     58145       7      1 madvise(0x107CE3000, 0xA000, 0x9)		 = 0 0
+20699/0xb016c:     60995      37     31 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru_RU.UTF-8/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61019      11      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru_RU/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61035       9      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru.UTF-8/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61051       9      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61250      13     10 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru_RU.UTF-8/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61268      10      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru_RU/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61284       9      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru.UTF-8/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61299       9      6 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61382      11      8 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru_RU.UTF-8/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61399       9      7 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru_RU/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61413       9      6 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru.UTF-8/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61428       9      6 stat64("/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/share/locale/ru/LC_MESSAGES/messages.mo\0", 0x7FFEE822CF70, 0x0)		 = -1 2
+20699/0xb016c:     61977      51     46 open_nocancel("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     61983       7      3 fstatfs64(0x3, 0x7FFEE822D648, 0x0)		 = 0 0
+20699/0xb016c:     62013      26     21 getdirentries64(0x3, 0x7FE19F855600, 0x2000)		 = 376 0
+20699/0xb016c:     62030       7      3 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     62091      37     34 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/file2.txt\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     62095       5      2 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     62119       9      2 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     62121       4      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     62130       4      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62135       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62139       7      3 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     62278      11      7 close(0x3)		 = 0 0
+20699/0xb016c:     62395      54     50 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/file1.txt\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     62399       5      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     62405       4      1 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     62406       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     62413       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62417       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62418       3      1 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     62488       7      4 close(0x3)		 = 0 0
+20699/0xb016c:     62657     394    135 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.DS_Store\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     62667       7      3 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     62673       4      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     62675       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     62681       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62684       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62686       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     62758       8      5 close(0x3)		 = 0 0
+20699/0xb016c:     62848      38     35 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/sys_calls.txt\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     62850       4      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     62854       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     62855       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     62860       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62863       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     62864       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     62946       7      4 close(0x3)		 = 0 0
+20699/0xb016c:     63020      36     33 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/get_files.py\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     63023       4      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     63027       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     63028       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     63032       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63035       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63036       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     63047       4      2 close(0x3)		 = 0 0
+20699/0xb016c:     63192     371    121 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/README.md\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     63202       8      3 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     63209       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     63210       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     63216       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63219       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63220       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     63268       7      5 close(0x3)		 = 0 0
+20699/0xb016c:     63345      42     40 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/profilling.txt\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     63347       3      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     63350       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     63351       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     63355       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63358       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63359       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     63434       5      3 close(0x3)		 = 0 0
+20699/0xb016c:     63691     447    121 lstat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea\0", 0x7FFEE822DC60, 0x0)		 = 0 0
+20699/0xb016c:     63745      38     33 open_nocancel("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     63750       7      3 fstatfs64(0x3, 0x7FFEE822D488, 0x0)		 = 0 0
+20699/0xb016c:     63768      17     13 getdirentries64(0x3, 0x7FE19F855600, 0x2000)		 = 296 0
+20699/0xb016c:     63782       7      3 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     63858      54     51 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/vcs.xml\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     63861       4      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     63865       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     63866       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     63871       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63874       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     63875       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     63911       5      3 close(0x3)		 = 0 0
+20699/0xb016c:     63988      53     51 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/workspace.xml\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     63991       3      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     63994       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     63995       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     63999       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64001       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64003       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     64038       5      3 close(0x3)		 = 0 0
+20699/0xb016c:     64132      52     49 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/hw2.iml\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     64135       3      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     64138       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     64139       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     64143       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64145       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64146       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     64177       5      2 close(0x3)		 = 0 0
+20699/0xb016c:     64248      50     48 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/modules.xml\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     64251       3      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     64254       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     64255       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     64258       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64261       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64262       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     64293       5      2 close(0x3)		 = 0 0
+20699/0xb016c:     64360      47     45 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/misc.xml\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     64362       3      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     64365       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     64366       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     64370       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64372       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64373       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     64414       5      2 close(0x3)		 = 0 0
+20699/0xb016c:     64461      31     28 lstat64("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/inspectionProfiles\0", 0x7FFEE822DAA0, 0x0)		 = 0 0
+20699/0xb016c:     64496      28     24 open_nocancel("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/inspectionProfiles\0", 0x1100004, 0x0)		 = 3 0
+20699/0xb016c:     64500       6      3 fstatfs64(0x3, 0x7FFEE822D2C8, 0x0)		 = 0 0
+20699/0xb016c:     64512      11      7 getdirentries64(0x3, 0x7FE19F855600, 0x2000)		 = 112 0
+20699/0xb016c:     64520       6      2 close_nocancel(0x3)		 = 0 0
+20699/0xb016c:     64589      51     49 open("/Users/sergeyantonov/Desktop/Epam/EpamPython2019/11-programming-and-debugging/hw/hw2/.idea/inspectionProfiles/profiles_settings.xml\0", 0x1000000, 0x1B6)		 = 3 0
+20699/0xb016c:     64592       3      1 fstat64(0x3, 0x7FFEE822DB98, 0x0)		 = 0 0
+20699/0xb016c:     64595       3      0 ioctl(0x3, 0x4004667A, 0x7FFEE822DBF4)		 = -1 25
+20699/0xb016c:     64596       2      0 ioctl(0x3, 0x40487413, 0x7FFEE822DBF8)		 = -1 25
+20699/0xb016c:     64600       3      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64602       2      0 lseek(0x3, 0x0, 0x1)		 = 0 0
+20699/0xb016c:     64604       3      0 fstat64(0x3, 0x7FFEE822DD80, 0x0)		 = 0 0
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2186 (ID 165: syscall::read:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     64636       5      3 close(0x3)		 = 0 0
+dtrace: error on enabled probe ID 2184 (ID 167: syscall::write:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2184 (ID 167: syscall::write:return): invalid kernel access in action #13 at DIF offset 68
+dtrace: error on enabled probe ID 2184 (ID 167: syscall::write:return): invalid kernel access in action #13 at DIF offset 68
+20699/0xb016c:     64738       5      1 sigaction(0x2, 0x7FFEE822E4C8, 0x7FFEE822E500)		 = 0 0
+20699/0xb016c:     66996       8      1 madvise(0x107E00000, 0x20000, 0x9)		 = 0 0
+20699/0xb016c:     67007       3      0 madvise(0x107DC0000, 0x20000, 0x9)		 = 0 0
+20699/0xb016c:     67012       3      0 madvise(0x107DE0000, 0x20000, 0x9)		 = 0 0
+20699/0xb016c:     67359       6      1 sigaltstack(0x0, 0x7FFEE822E520, 0x0)		 = 0 0
+20699/0xb016c:     67363       3      0 madvise(0x107D40000, 0x40000, 0x9)		 = 0 0
+20699/0xb016c:     67412      26     21 munmap(0x108256000, 0x40000)		 = 0 0
